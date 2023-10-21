@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 3rem;
+
+    border-bottom: 1px solid #cacaca;
+}
+
+.detail {
+    width: 100px;
+}
+
+.logo {
+    width: 130px;
+}
+
+.headerImgs {
+    display: flex;
+    align-items: center;
+}
+
+.header ul {
+    display: flex;
+    gap: 30px;
+}
+
+.header ul li {
+    font-size: 0.85rem;
+    list-style: none;
+}
