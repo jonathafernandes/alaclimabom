@@ -14,3 +14,15 @@
 .contentHero p {
     font-size: 1rem;
 }
+
+@media (max-width: 460px) {
+    .contentHero {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 338px) {
+    .contentHero h2, .contentHero p {
+        text-align: center;
+    }
+}

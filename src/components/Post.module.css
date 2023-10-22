@@ -16,7 +16,7 @@ header span {
 }
 
 header .line {
-    width: 50%;
+    width: 80%;
     height: 1px;
 
     background: var(--black);
@@ -31,13 +31,20 @@ header .line {
 }
 
 .contentPost img {
-    width: 35rem;
+    flex: 1;
+    max-width: 100%;
+    height: auto;
 }
+/* 
+.sideA {
+    display: flex;
+    flex-wrap: wrap;
+} */
 
 .sideA, .sideB {
     display: flex;
     gap: 0.5rem;
-    align-items: flex-start;
+    align-items: flex-start; 
     /* flex-wrap: wrap; */
     /* flex-direction: column; */
     /* justify-content: space-between; */
@@ -65,6 +72,7 @@ header .line {
 section {
     margin-bottom: 2rem;
     /* width: 50vw; */
+    flex: 1;
 }
 
 section ul li {
@@ -74,3 +82,17 @@ section ul li {
 /* .info {
     margin-top: 6rem;
 } */
+
+@media (min-width: 768px) {
+    .contentPost img {
+      width: 500px; /* Define a largura desejada para telas maiores */
+      flex: 0 0 calc(50% - 10px); /* Define a largura desejada para telas maiores (50% do contêiner com algum espaçamento) */
+      margin: 5px; /* Espaçamento entre as imagens */
+    }
+}
+
+@media (max-width: 768px) {
+    .sideA, .sideB{
+        flex-direction: column;
+    }
+}

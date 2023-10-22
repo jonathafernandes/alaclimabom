@@ -29,3 +29,9 @@
     font-size: 0.85rem;
     list-style: none;
 }
+
+@media (max-width: 460px) {
+    .header ul {
+        display: none;
+    }
+}
