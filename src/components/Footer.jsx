@@ -8,12 +8,12 @@ export function Footer() {
             <div className={styles.social}>
                 <div>
                     <a target="_blank" href="https://www.instagram.com/alaclimabom">
-                        <InstagramLogo size={32} />
+                        <InstagramLogo size={22} />
                         <p>alaclimabom</p>
                     </a>
                 </div>
                 <div className={styles.address}>
-                    <MapPin size={32} />
+                    <MapPin size={22} />
                     <p>Rua Santa Luzia, 886 - Tabuleiro do Martins</p>
                 </div>
             </div>
