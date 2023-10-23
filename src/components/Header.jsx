@@ -10,14 +10,16 @@ export function Header() {
                 <img className={styles.detail} src={detail} alt="" />
                 <img className={styles.logo} src={logo} alt="" />
             </div>
-            <ul>
-                <li>
-                    <a href="https://noticias-br.aigrejadejesuscristo.org/">
-                        Notícias
-                    </a>
-                </li>
-                <li>Anúncios</li>
-            </ul>
+            <nav className={styles.subHeader}>
+                <ul>
+                    <li>
+                        <a href="https://noticias-br.aigrejadejesuscristo.org/">
+                            Notícias
+                        </a>
+                    </li>
+                    <li>Anúncios</li>
+                </ul>
+            </nav>
         </>
     )
 }
