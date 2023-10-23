@@ -68,7 +68,7 @@ export function Post(props) {
                         <p>A atividade das Moças será focada na parte social do programa Crianças e Jovens da Igreja, com o intuito de fortalecer amizades.
                         </p>
                         <br />
-                        <p>A Caravana ao Templo será realizada apenas em Dezembro, mas é pedido desde já que, aqueles que têm interesse, reservem suas vagas e efetuem o pagamento com antecedência. Para reservar sua vaga, basta clicar <a className={styles.linkDetail} href="https://docs.google.com/forms/d/e/1FAIpQLScmdWiAD86Eml1yu23tjN6F_i-_uoYC1uWYz5JO_ccDxUK8eA/viewform" target="_blank">aqui</a> e preencher o formuláro. Para mais informções, procurar a Presidência do Quórum de Elderes.</p>
+                        <p>A Caravana ao Templo será realizada apenas em Dezembro, mas é pedido desde já que, aqueles que têm interesse, reservem suas vagas e efetuem o pagamento com antecedência. Para reservar sua vaga, basta clicar <a className={styles.linkDetail} href="https://docs.google.com/forms/d/e/1FAIpQLScmdWiAD86Eml1yu23tjN6F_i-_uoYC1uWYz5JO_ccDxUK8eA/viewform" target="_blank">aqui</a> e preencher o formuláro. Para mais informações, procurar a Presidência do Quórum de Elderes.</p>
                     </div>
                 </section>
                 </div>
