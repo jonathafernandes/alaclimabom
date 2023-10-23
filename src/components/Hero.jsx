@@ -9,7 +9,7 @@ export function Hero() {
             </h2>
             <br />
             <p>
-                Aqui você relembra o que rolou durante a semana na Ala CLima Bom e fica por dentro das notícias da Igreja.
+                Aqui você relembra o que rolou durante a semana na Ala Clima Bom e fica por dentro das notícias da Igreja.
                 <br />
                 A Ala Clima Bom é uma unidade de A Igreja de Jesus Cristo dos Santos dos Últimos Dias.
                 <br />
