@@ -7,7 +7,7 @@ export function Footer() {
         <div className={styles.footer}>
             <div className={styles.social}>
                 <div>
-                    <a target="_blank" href="https://www.instagram.com/alaclimabom">
+                    <a target="_blank" href="https://www.instagram.com/alaclimabom" rel="noreferrer noopener">
                         <InstagramLogo size={22} />
                         <p>alaclimabom</p>
                     </a>

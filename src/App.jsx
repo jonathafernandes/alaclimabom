@@ -1,11 +1,7 @@
-// import { styles } from './App.css'
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Post } from "./components/Post";
-
-// import img1 from "../assets/img1.jpeg";
-// import img2 from "../assets/img2.jpeg";
 
 import "./index.css";
 
@@ -29,8 +25,6 @@ export function App() {
           titleAd2={'Templo'}
           ad1={'Atividade da Organização das Moças'}
           ad2={'Caravana ao Templo'}
-          // srcImg1={img1}
-          // srcImg2={img2}
         />
       </main>
       <Footer />

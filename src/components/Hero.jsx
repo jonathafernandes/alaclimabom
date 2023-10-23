@@ -15,7 +15,7 @@ export function Hero() {
                 <br />
                 Quer saber mais sobre a Igreja? Clique no botão abaixo.
             </p>
-            <a className={styles.button} target="_blank" href="https://www.vindeacristo.org/?lang=por">Saiba mais</a>
+            <a className={styles.button} target="_blank" href="https://www.vindeacristo.org/?lang=por" rel="noreferrer noopener">Saiba mais</a>
         </div>
     )
 }
