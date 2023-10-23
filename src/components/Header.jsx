@@ -11,7 +11,11 @@ export function Header() {
                 <img className={styles.logo} src={logo} alt="" />
             </div>
             <ul>
-                <li>Notícias</li>
+                <li>
+                    <a href="https://noticias-br.aigrejadejesuscristo.org/">
+                        Notícias
+                    </a>
+                </li>
                 <li>Anúncios</li>
             </ul>
         </div>

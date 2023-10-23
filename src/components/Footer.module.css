@@ -1,0 +1,25 @@
+.footer {
+    background: #f5f4f4;
+    color: var(--black);
+    font-size: 0.85rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.3rem;
+    padding: 4rem;
+}
+
+.footer a, .address {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+@media (max-width: 847px) {
+    .footer {
+        flex-direction: column;
+        gap: 2.5rem;
+        padding: 1rem;
+    }
+}

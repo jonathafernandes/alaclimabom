@@ -4,7 +4,7 @@
     justify-content: space-between;
     padding-right: 3rem;
 
-    border-bottom: 1px solid #cacaca;
+    border-bottom: 1px solid #e0e2e2;
 }
 
 .detail {
@@ -28,6 +28,10 @@
 .header ul li {
     font-size: 0.85rem;
     list-style: none;
+}
+
+.header ul li a:hover {
+    color: var(--blue-25);
 }
 
 @media (max-width: 460px) {

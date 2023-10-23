@@ -35,25 +35,15 @@ header .line {
     max-width: 100%;
     height: auto;
 }
-/* 
-.sideA {
-    display: flex;
-    flex-wrap: wrap;
-} */
 
 .sideA, .sideB {
     display: flex;
     gap: 0.5rem;
     align-items: flex-start; 
-    /* flex-wrap: wrap; */
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
 }
 
 .contentPost h3, h5 {
     text-transform: uppercase;
-
-    margin-bottom: 0.5rem;
 }
 
 .contentPost span {
@@ -69,19 +59,40 @@ header .line {
     width: 90%;
 }
 
+.sideB .contentMessage {
+    background: #e9effd;
+    border: 1px solid #e9effd;
+    border-radius: 8px;
+
+    padding: 10px;
+
+    margin-top: 0.5rem;
+}
+
+.sideB ul li {
+    padding: 10px;
+    margin-bottom: 1rem;
+
+    border-radius: 5px;
+    list-style: none;
+    box-shadow: 0 2px 5px 0 rgba(74, 74, 74, 0.2);
+}
+
 section {
     margin-bottom: 2rem;
-    /* width: 50vw; */
     flex: 1;
 }
 
-section ul li {
-    margin-bottom: 0.5rem;
+.titleAd {
+    color: var(--blue-25);
+
+    margin-bottom: 1rem;
 }
 
-/* .info {
-    margin-top: 6rem;
-} */
+.linkDetail {
+    text-decoration: underline;
+    color: blue;
+}
 
 @media (min-width: 768px) {
     .contentPost img {

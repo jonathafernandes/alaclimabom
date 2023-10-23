@@ -36,7 +36,7 @@ export function Post(props) {
                         {props.section3Title}
                     </h3>
                     <span>{props.author}</span>
-                    <p>{props.textContent}</p>
+                    <p className={styles.contentMessage}>{props.textContent}</p>
                 </section>
                 <section>
                     <h3>
@@ -44,15 +44,31 @@ export function Post(props) {
                     </h3>
                     {/* <span className={styles.circle}></span> */}
                     <ul>
-                        <li>{props.ad1}</li>
-                        <li>{props.ad2}</li>
+                        <li>
+                            <span className={styles.titleAd}>
+                                {props.titleAd1}
+                            </span>
+                            <br />
+                            28 de Outubro
+                            <br />
+                            {props.ad1}
+                        </li>
+                        <li>
+                            <span className={styles.titleAd}>
+                                {props.titleAd2}
+                            </span>
+                            <br />
+                            15 de Dezembro
+                            <br />
+                            {props.ad2}
+                        </li>
                     </ul>
                     <div className={styles.info}>
-                        <h5>Mais informações</h5>
-                        <p>A atividade das Moças será focada no parte social do programa Crianças e Jovens da Igreja, com o intuito de fortalecer amizades.
+                        <h5>Mais informações:</h5>
+                        <p>A atividade das Moças será focada na parte social do programa Crianças e Jovens da Igreja, com o intuito de fortalecer amizades.
                         </p>
                         <br />
-                        <p>A Caravana ao Templo será realizada apenas em Dezembro, mas é pedido desde já que, aqueles que têm interesse, reservem suas vagas e efetuem o pagamento com antecedência. Para reservar sua vaga, basta clicar <a href="https://docs.google.com/forms/d/e/1FAIpQLScmdWiAD86Eml1yu23tjN6F_i-_uoYC1uWYz5JO_ccDxUK8eA/viewform" target="_blank">aqui</a> e preencher o formuláro. Para mais informções, procurar a Presidência do Quórum de Elderes.</p>
+                        <p>A Caravana ao Templo será realizada apenas em Dezembro, mas é pedido desde já que, aqueles que têm interesse, reservem suas vagas e efetuem o pagamento com antecedência. Para reservar sua vaga, basta clicar <a className={styles.linkDetail} href="https://docs.google.com/forms/d/e/1FAIpQLScmdWiAD86Eml1yu23tjN6F_i-_uoYC1uWYz5JO_ccDxUK8eA/viewform" target="_blank">aqui</a> e preencher o formuláro. Para mais informções, procurar a Presidência do Quórum de Elderes.</p>
                     </div>
                 </section>
                 </div>
