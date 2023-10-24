@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 export function Post(props) {
     return (
-        <div className={styles.content}>
+        <div className={styles.content} id="post">
             <header>
                 <span className={styles.date}>Semana 08/10 à 15/10 <div className={styles.line}></div></span>
             </header>

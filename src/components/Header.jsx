@@ -4,6 +4,13 @@ import detail from "../assets/detail.svg";
 
 
 export function Header() {
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <>
             <div className={styles.header}>
@@ -13,11 +20,15 @@ export function Header() {
             <nav className={styles.subHeader}>
                 <ul>
                     <li>
-                        <a href="https://noticias-br.aigrejadejesuscristo.org/">
+                        <a onClick={() => scrollToSection('post')}>
                             Notícias
                         </a>
                     </li>
-                    <li>Anúncios</li>
+                    <li>
+                        <a onClick={() => scrollToSection('footer')}>
+                            Contato
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </>

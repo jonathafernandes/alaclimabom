@@ -4,7 +4,7 @@ import { InstagramLogo, MapPin } from "@phosphor-icons/react/dist/ssr";
 
 export function Footer() {
     return (
-        <div className={styles.footer}>
+        <div className={styles.footer} id="footer">
             <div className={styles.social}>
                 <div>
                     <a target="_blank" href="https://www.instagram.com/alaclimabom" rel="noreferrer noopener">

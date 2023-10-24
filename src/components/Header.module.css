@@ -28,6 +28,8 @@
 .subHeader ul li {
     font-size: 0.85rem;
     list-style: none;
+
+    cursor: pointer;
 }
 
 .subHeader ul li a:hover {
