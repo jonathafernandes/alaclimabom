@@ -71,6 +71,10 @@ header .line {
     box-shadow: 0 2px 5px 0 rgba(74, 74, 74, 0.2);
 }
 
+.sideB ul li p {
+    margin-top: 0.5rem;
+}
+
 section {
     margin-bottom: 2rem;
     flex: 1;

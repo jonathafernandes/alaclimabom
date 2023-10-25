@@ -5,9 +5,15 @@
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 0.3rem;
+    flex-direction: column;
+    gap: 2rem;
     padding: 4rem;
+}
+
+.footer .social {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
 }
 
 .footer a, .address {
