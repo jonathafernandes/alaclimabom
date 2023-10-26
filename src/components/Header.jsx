@@ -1,13 +1,13 @@
-import styles from "./Header.module.css";
-import logo from "../assets/logo.png";
-import detail from "../assets/detail.svg";
-
+import styles from './Header.module.css';
+import logo from '../assets/logo.png';
+import detail from '../assets/detail.svg';
+import { Link } from 'react-router-dom';
 
 export function Header() {
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: 'smooth' });
         }
     };
 
@@ -20,17 +20,19 @@ export function Header() {
             <nav className={styles.subHeader}>
                 <ul>
                     <li>
-                        <a onClick={() => scrollToSection('post')}>
-                            Notícias
-                        </a>
+                        <Link to="/">Página Inicial</Link>
                     </li>
                     <li>
-                        <a onClick={() => scrollToSection('footer')}>
-                            Contato
-                        </a>
+                        <a onClick={() => scrollToSection('post')}>Notícias</a>
+                    </li>
+                    <li>
+                        <Link to="/calendars">Calendários</Link>
+                    </li>
+                    <li>
+                        <Link to="/missionarywork">Obra Missionária</Link>
                     </li>
                 </ul>
             </nav>
         </>
-    )
+    );
 }

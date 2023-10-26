@@ -9,7 +9,7 @@ export function App() {
 
   return (
     <>
-    <Header />
+      <Header />
       <main>
         <Hero />
         <Post
@@ -24,8 +24,7 @@ export function App() {
           titleAd1={'Atividade'}
           titleAd2={'Templo'}
           ad1={'Atividade da Organização das Moças'}
-          ad2={'Caravana ao Templo'}
-        />
+          ad2={'Caravana ao Templo'} />
       </main>
       <Footer />
     </>

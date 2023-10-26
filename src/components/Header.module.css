@@ -17,7 +17,7 @@
 
 .subHeader ul {
     display: flex;
-    gap: 30px;
+    gap: 2rem;
     justify-content: center;
     padding: 1rem;
 
@@ -27,11 +27,24 @@
 
 .subHeader ul li {
     font-size: 0.85rem;
-    list-style: none;
 
     cursor: pointer;
 }
 
 .subHeader ul li a:hover {
     color: var(--blue-25);
+}
+
+@media (max-width: 542px) {
+    .subHeader ul {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 463px) {
+    .subHeader ul {
+        flex-direction: column;
+
+        text-align: center;
+    }
 }
