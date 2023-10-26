@@ -5,7 +5,7 @@ import { Header } from "../components/Header";
 
 export function Calendars() {
     return (
-        <>
+        <div className={styles.calendarsContent}>
             <Header />
             <div className={styles.birthdays}>
                 <h2>Aniversariantes do mês</h2>
@@ -19,6 +19,6 @@ export function Calendars() {
                 <h2>Atividades</h2>
                 <p>Em breve...</p>
             </div>
-        </>
+        </div>
     )
 }
