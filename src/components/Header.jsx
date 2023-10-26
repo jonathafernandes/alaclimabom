@@ -20,7 +20,13 @@ export function Header() {
             <nav className={styles.subHeader}>
                 <ul>
                     <li>
+                        <Link to="/">Página Inicial</Link>
+                    </li>
+                    <li>
                         <a onClick={() => scrollToSection('post')}>Notícias</a>
+                    </li>
+                    <li>
+                        <Link to="/calendars">Calendários</Link>
                     </li>
                     <li>
                         <Link to="/missionarywork">Obra Missionária</Link>
