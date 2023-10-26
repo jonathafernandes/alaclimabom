@@ -2,6 +2,7 @@ import styles from "./Calendars.module.css";
 
 import { Birthdays } from "../components/Birthdays";
 import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
 
 export function Calendars() {
     return (
@@ -15,10 +16,7 @@ export function Calendars() {
                 <h2>Almoço dos missionários</h2>
                 <p>Em breve...</p>
             </div>
-            <div className={styles.activities}>
-                <h2>Atividades</h2>
-                <p>Em breve...</p>
-            </div>
+            <Footer />
         </div>
     )
 }

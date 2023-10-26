@@ -31,9 +31,6 @@ export function Header() {
                     <li>
                         <Link to="/missionarywork">Obra Missionária</Link>
                     </li>
-                    <li>
-                        <a onClick={() => scrollToSection('footer')}>Contato</a>
-                    </li>
                 </ul>
             </nav>
         </>

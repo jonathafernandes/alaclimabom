@@ -5,6 +5,10 @@
     margin: 3.3rem 0;
 }
 
+.calendarsContent .lunch {
+    margin-bottom: 3.3rem;
+}
+
 .calendarsContent p {
     text-align: center;
 }
