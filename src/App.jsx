@@ -2,14 +2,19 @@ import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Post } from "./components/Post";
+import { MissionaryWork } from "./components/MissionaryWork";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import "./index.css";
 
 export function App() {
 
   return (
-    <>
+    <Router>
     <Header />
+      <Routes>
+        <Route path="/missionarywork" component={MissionaryWork} />
+      </Routes>
       <main>
         <Hero />
         <Post
@@ -28,6 +33,6 @@ export function App() {
         />
       </main>
       <Footer />
-    </>
+    </Router>
   )
 }

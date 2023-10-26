@@ -33,3 +33,9 @@
         padding: 1rem;
     }
 }
+
+@media (max-width: 326px) {
+    .footer {
+        font-size: 0.75rem;
+    }
+}
