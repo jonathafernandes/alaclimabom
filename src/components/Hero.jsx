@@ -7,7 +7,6 @@ export function Hero() {
             <h2>
                 Seja bem-vindo(a)!
             </h2>
-            <br />
             <p>
                 Aqui você relembra o que rolou durante a semana na Ala Clima Bom e fica por dentro das notícias da Igreja.
                 <br />
