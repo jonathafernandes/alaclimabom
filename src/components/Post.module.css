@@ -35,13 +35,14 @@ header .line {
     align-items: flex-start; 
 }
 
-.contentPost h3, h5 {
+.contentPost h3 {
     text-transform: uppercase;
+    margin-bottom: 0.3rem;
 }
 
 .contentPost span {
     font-size: 0.75rem;
-    font-style: italic;
+    color: var(--blue-25);
 }
 
 .contentPost p {
@@ -49,24 +50,20 @@ header .line {
     font-weight: 300;
 
     line-height: 1.6rem;
-    width: 90%;
+    width: 80%;
 }
 
 .sideB .contentMessage {
-    background: #e9effd;
+    background: #f6f8ff;
     border: 1px solid #e9effd;
-    border-radius: 8px;
 
     padding: 10px;
-
-    margin-top: 0.5rem;
 }
 
 .sideB ul li {
     padding: 10px;
     margin-bottom: 1rem;
 
-    border-radius: 5px;
     box-shadow: 0 2px 5px 0 rgba(74, 74, 74, 0.2);
 }
 
@@ -100,5 +97,9 @@ section {
 @media (max-width: 768px) {
     .sideA, .sideB{
         flex-direction: column;
+    }
+
+    .contentPost p {
+        width: 90%;
     }
 }

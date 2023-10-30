@@ -13,18 +13,26 @@ export function App() {
       <main>
         <Hero />
         <Post
-          section1Title={'Atividade da Primária'}
-          section2Title={'Reunião Sacramental em Pilar'}
+          news1Title={'Atividade da História da Família'}
+          news2Title={'Atividade para jovens da Estaca'}
+          news3Title={'Projeto de serviço'}
+          news4Title={'Atividade da OM'}
           section3Title={'Mensagem para os membros'}
           section4Title={'Anúncios'}
-          author={'Ministração — Presidência do Quórum de Elderes'}
-          textContent={'Queridos irmãos e irmãs, buscamos constantemente orientação do Senhor sobre como podemos ajudar nossos irmãos(a) a guardar os mandamentos de Deus, especialmente os dois grandes mandamentos de amar a Deus e ao próximo. Tomamos a decisão de aposentar o programa de “mestre familiar” e o de “professora visitante” como os conhecemos. Em vez disso, vamos implementar uma nova e mais sagrada abordagem para cuidar das outras pessoas e ministrar a elas. Vamos nos referir a esses esforços simplesmente como “ministrar como o Salvador”. Esforços eficazes de ministração são capacitados pelos dons inatos das irmãs e pelo incomparável poder do sacerdócio. Todos nós precisamos de tal proteção contra as artimanhas astutas do adversário. — Presidente Russell M. Nelson'}
-          text1Img={'A Presidência da Primária realizou uma atividade no dia 12 de Outubro para celebrar o Dia das Crianças.'}
-          text2Img={'Recebemos a visita do Presidente da Estaca, Manoel Messias, na Reunião Sacramental realizada para os membros do Pilar.'}
-          titleAd1={'Atividade'}
-          titleAd2={'Templo'}
-          ad1={'Atividade da Organização das Moças'}
-          ad2={'Caravana ao Templo'} />
+          author={'Klécia Poliana'}
+          textContent={'Um dia, vocês vão se apresentar perante o Salvador. Vocês ficarão impressionados a ponto de chorar por estarem em Sua santa presença. Vão ter dificuldades para encontrar palavras para agradecê-Lo por pagar por seus pecados, por perdoá-los de qualquer maldade com outros, por curá-los das injúrias e injustiças desta vida. — Presidente Russell M. Nelson'}
+          text1Img={'A Presidência da Sociedade de Socorro realizou uma atividade sobre História da Família com o objetivo de ajudar as irmãs a realizar esse trabalho sagrado.'}
+          text2Img={'Foi realizada uma atividade para todos os jovens da Estaca para apresentação do novo tema da Mutual do próximo ano.'}
+          text3Img={'Os irmãos do quórum de élderes serviram os membros de Pilar, realizando um projeto de serviço com o objetivo de deixar o local das reuniões sacramentais mais organizado e limpo.'}
+          text4Img={'A Presidência da Organização das Moças realizou uma atividade para colocar em prática princípios do programa Crianças e Jovens.'}
+          titleAd1={'Coral'}
+          titleAd2={'Palestra'}
+          titleAd3={'Atividade'}
+          titleAd4={'Templo'}
+          ad1={'Ensaio do coral'}
+          ad2={'Autossuficiência e Tecnologia'}
+          ad3={'Atividade da ORM'}
+          ad4={'Caravana ao Templo'} />
       </main>
       <Footer />
     </>
