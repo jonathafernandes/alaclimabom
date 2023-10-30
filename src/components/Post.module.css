@@ -27,6 +27,7 @@ header .line {
     flex: 1;
     max-width: 100%;
     height: auto;
+    margin-top: 0.3rem;
 }
 
 .sideA, .sideB {
@@ -37,7 +38,6 @@ header .line {
 
 .contentPost h3 {
     text-transform: uppercase;
-    margin-bottom: 0.3rem;
 }
 
 .contentPost span {

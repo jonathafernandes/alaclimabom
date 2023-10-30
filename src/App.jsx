@@ -23,7 +23,7 @@ export function App() {
           textContent={'Um dia, vocês vão se apresentar perante o Salvador. Vocês ficarão impressionados a ponto de chorar por estarem em Sua santa presença. Vão ter dificuldades para encontrar palavras para agradecê-Lo por pagar por seus pecados, por perdoá-los de qualquer maldade com outros, por curá-los das injúrias e injustiças desta vida. — Presidente Russell M. Nelson'}
           text1Img={'A Presidência da Sociedade de Socorro realizou uma atividade sobre História da Família com o objetivo de ajudar as irmãs a realizar esse trabalho sagrado.'}
           text2Img={'Foi realizada uma atividade para todos os jovens da Estaca para apresentação do novo tema da Mutual do próximo ano.'}
-          text3Img={'Os irmãos do quórum de élderes serviram os membros de Pilar, realizando um projeto de serviço para limpeza e organização do local.'}
+          text3Img={'Os irmãos do quórum de élderes serviram a irmã Michele de Pilar, realizando um projeto de serviço para limpeza e organização de uma área em sua residência.'}
           text4Img={'A Presidência da Organização das Moças realizou uma atividade para colocar em prática princípios do programa Crianças e Jovens.'}
           titleAd1={'Coral'}
           titleAd2={'Palestra'}
