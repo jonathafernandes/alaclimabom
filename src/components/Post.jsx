@@ -1,8 +1,11 @@
 import styles from "./Post.module.css";
+
 import img1 from "../assets/img1.png";
 import img2 from "../assets/img2.png";
 import img3 from "../assets/img3.png";
 import img4 from "../assets/img4.png";
+// import { Button } from "./Button";
+
 import PropTypes from 'prop-types';
 
 export function Post(props) {
@@ -19,6 +22,7 @@ export function Post(props) {
                             </h3>
                             <img src={img1} alt="" />
                             <p>{props.text1Img}</p>
+                            {/* <Button src="#"/> */}
                         </section>
                         <section>
                             <h3>
@@ -26,6 +30,7 @@ export function Post(props) {
                             </h3>
                             <img src={img2} alt="" />
                             <p>{props.text2Img}</p>
+                            {/* <Button src="#"/> */}
                         </section>
                     </div>
                     <div className={styles.sideA}>
@@ -35,6 +40,7 @@ export function Post(props) {
                             </h3>
                             <img src={img3} alt="" />
                             <p>{props.text3Img}</p>
+                            {/* <Button src="#"/> */}
                         </section>
                         <section>
                             <h3>
@@ -42,6 +48,7 @@ export function Post(props) {
                             </h3>
                             <img src={img4} alt="" />
                             <p>{props.text4Img}</p>
+                            {/* <Button src="#"/> */}
                         </section>
                     </div>
                     <div className={styles.sideB}>
