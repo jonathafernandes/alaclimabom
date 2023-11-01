@@ -1,6 +1,6 @@
 import styles from './Header.module.css';
 import logo from '../assets/logo.png';
-import detail from '../assets/detail.svg';
+import iconDetail from '../assets/detail.svg';
 import { Link, useLocation } from 'react-router-dom';
 
 export function Header() {
@@ -17,7 +17,7 @@ export function Header() {
     return (
         <>
             <div className={styles.header}>
-                <img className={styles.detail} src={detail} alt="" />
+                <img className={styles.detail} src={iconDetail} alt="" />
                 <img className={styles.logo} src={logo} alt="" />
             </div>
             <nav className={styles.subHeader}>

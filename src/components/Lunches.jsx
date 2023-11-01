@@ -52,7 +52,7 @@ export function Lunches() {
                 ))}
             </ul>
             <p>Clique no botão abaixo para baixar o caléndario de almoços.</p>
-            <a className={styles.button} href="./src/assets/calendar.jpeg" download="calendar.jpeg">
+            <a className={styles.button} href="./src/assets/calendar.jpeg" download="calendario-almoços.jpeg">
                 <span>
                     Download
                 </span>

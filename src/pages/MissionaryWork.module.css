@@ -1,5 +1,7 @@
-.content h2 {
-    text-align: center;
+.content p {
+    color: var(--gray);
+}
 
-    margin: 11rem 0;
+.iconMissionary {
+    width: 2rem;
 }
