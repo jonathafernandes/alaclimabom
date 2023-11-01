@@ -54,13 +54,6 @@ export function Lunches() {
                     </React.Fragment>
                 ))}
             </ul>
-            <p>Clique no botão abaixo para baixar o caléndario de almoços.</p>
-            <a className={styles.button} href="./src/assets/calendar.jpeg" download="calendario-almoços.jpeg">
-                <span>
-                    Download
-                </span>
-                <DownloadSimple size={20} />
-            </a>
             <p>Clique no botão abaixo para baixar o calendário de almoços.</p>
             <PrimaryButton
                 href={'./src/assets/calendario-almoços.jpeg'}
