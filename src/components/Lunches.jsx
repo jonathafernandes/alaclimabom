@@ -1,3 +1,4 @@
+import { DownloadSimple } from "@phosphor-icons/react";
 import styles from "./Lunches.module.css";
 
 export function Lunches() {
@@ -31,23 +32,32 @@ export function Lunches() {
     ];
 
     return (
-        <ul className={styles.lunchesList}>
-            {lunches.map((lunches, index) => (
-            <>
-                <li key={index}>
-                    <span className={styles.date}>
-                        {lunches.date}
-                    </span>
-                    <strong>
-                        {lunches.name}
-                    </strong>
-                    <span className={styles.contact}>
-                        {lunches.contact}
-                    </span>
-                </li>
-                <hr />
-            </>
-            ))}
-        </ul>
+        <div className={styles.lunches}>
+            <ul className={styles.lunchesList}>
+                {lunches.map((lunches, index) => (
+                <>
+                    <li key={index}>
+                        <span className={styles.date}>
+                            {lunches.date}
+                        </span>
+                        <strong>
+                            {lunches.name}
+                        </strong>
+                        <span className={styles.contact}>
+                            {lunches.contact}
+                        </span>
+                    </li>
+                    <hr />
+                </>
+                ))}
+            </ul>
+            <p>Clique no botão abaixo para baixar o caléndario de almoços.</p>
+            <a className={styles.button} href="./src/assets/calendar.jpeg" download="calendar.jpeg">
+                <span>
+                    Download
+                </span>
+                <DownloadSimple size={20} />
+            </a>
+        </div>
     )
 }
