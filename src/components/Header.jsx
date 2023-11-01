@@ -33,9 +33,9 @@ export function Header() {
                     <li>
                         <Link to="/calendars">Calendários</Link>
                     </li>
-                    {/* <li>
+                    <li>
                         <Link to="/missionarywork">Obra Missionária</Link>
-                    </li> */}
+                    </li>
                 </ul>
             </nav>
         </>
