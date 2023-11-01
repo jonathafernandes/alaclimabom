@@ -1,0 +1,64 @@
+.lunches {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.lunchesList {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    padding: 0;
+    margin: 0 1rem;
+}
+
+.lunchesList li {
+    display: flex;
+    flex-direction: column;
+}
+
+.date, .contact {
+    font-size: 0.85rem;
+}
+
+.lunches a {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.lunches p {
+    color: var(--gray);
+    font-weight: 300;
+
+    margin-top: 2rem;
+}
+
+.button {
+    background: var(--white);
+    border: 1px solid var(--blue-25);
+    color: var(--blue-25);
+    
+    padding: 0.5rem 1rem;
+
+    transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+}
+
+.button:hover {
+    background: #006184;
+    color: var(--white);
+}
+
+@media (max-width: 603px) {
+    .lunchesList {
+        flex-direction: column;
+        margin: 0 1rem;
+    }
+
+    .lunchesList li {
+        justify-content: space-around;
+    }
+}
