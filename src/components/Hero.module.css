@@ -23,7 +23,7 @@
     margin-bottom: 1.5em;
 }
 
-.button {
+/* .button {
     background: var(--white);
     border: 1px solid var(--blue-25);
     color: var(--blue-25);
@@ -36,7 +36,7 @@
 .button:hover {
     background: #006184;
     color: var(--white);
-}
+} */
 
 @media (max-width: 482px) {
     .contentHero {

@@ -1,4 +1,5 @@
 import styles from "./Hero.module.css";
+import { PrimaryButton } from "./PrimaryButton";
 
 export function Hero() {
     return (
@@ -14,7 +15,10 @@ export function Hero() {
                 <br />
                 Quer saber mais sobre a Igreja? Clique no botão abaixo.
             </p>
-            <a className={styles.button} target="_blank" href="https://www.vindeacristo.org/?lang=por" rel="noreferrer noopener">Saiba mais</a>
+            <PrimaryButton 
+                href={"https://www.vindeacristo.org/?lang=por"}
+                text={"Saiba mais"}
+            />
         </div>
     )
 }
