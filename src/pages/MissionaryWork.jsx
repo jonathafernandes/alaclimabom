@@ -8,7 +8,7 @@ import styles from "./MissionaryWork.module.css";
 
 export function MissionaryWork() {
     const [message, setMessage] = useState('');
-    const phoneNumber = '82991487903';
+    const phoneNumber = '82991935188';
 
     const handleSendWhatsAppMessage = () => {
         const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=Olá Elderes! Gostaria que vocês conhecessem uma pessoa, se chama ${encodeURIComponent(message)}.`;
