@@ -26,12 +26,12 @@ export function Lunches() {
         { id: 18, date: '21 nov — terça-feira', name: 'Edinete', contact: '82 988498524' },
         { id: 19, date: '22 nov — quarta-feira', name: 'Veridiana', contact: '82 991920345' },
         { id: 20, date: '23 nov — quinta-feira', name: 'Fábio', contact: '82 993721746' },
-        { id: 21, date: '24 nov — sexta-feira', name: '', contact: '' },
+        { id: 21, date: '24 nov — sexta-feira', name: 'Camylla Eugênio', contact: '82 9147-9785' },
         { id: 22, date: '25 nov — sábado', name: 'Eunice', contact: '82 987083859' },
         { id: 23, date: '26 nov — domingo', name: 'Taciana', contact: '82 988412167' },
         { id: 24, date: '28 nov — terça-feira', name: 'Silvaneide', contact: '82 988305290' },
         { id: 25, date: '29 nov — quarta-feira', name: 'Cida', contact: '82 988175333' },
-        { id: 26, date: '30 nov — quinta-feira', name: 'Camylla Eugênio', contact: '82 9147-9785' },
+        { id: 26, date: '30 nov — quinta-feira', name: '', contact: '' },
     ];
 
     return (
