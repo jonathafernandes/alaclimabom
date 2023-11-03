@@ -31,7 +31,7 @@ export function Lunches() {
         { id: 23, date: '26 nov — domingo', name: 'Taciana', contact: '82 988412167' },
         { id: 24, date: '28 nov — terça-feira', name: 'Silvaneide', contact: '82 988305290' },
         { id: 25, date: '29 nov — quarta-feira', name: 'Cida', contact: '82 988175333' },
-        { id: 26, date: '30 nov — quinta-feira', name: '', contact: '' },
+        { id: 26, date: '30 nov — quinta-feira', name: 'Juliana', contact: '82 988271431' },
     ];
 
     return (
