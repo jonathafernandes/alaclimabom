@@ -2,6 +2,8 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { useState } from "react";
 import { WhatsappLogo } from "@phosphor-icons/react";
+import { Goals } from "../components/Goals";
+
 
 import iconMissionary from "../assets/missionary.svg"
 import styles from "./MissionaryWork.module.css";
@@ -36,6 +38,10 @@ export function MissionaryWork() {
                         <WhatsappLogo size={20} />
                     </button>
                 </form>
+                <div className={styles.goals}>
+                    <h2>Metas da ala</h2>
+                    <Goals />
+                </div>
             </main>
             <Footer />
         </div>
