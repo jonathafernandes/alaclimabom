@@ -18,7 +18,9 @@ export function Header() {
         <>
             <div className={styles.header}>
                 <img className={styles.detail} src={iconDetail} alt="" />
-                <img className={styles.logo} src={logo} alt="" />
+                <Link to="/">
+                    <img className={styles.logo} src={logo} alt="" />
+                </Link>
             </div>
             <nav className={styles.subHeader}>
                 <ul>

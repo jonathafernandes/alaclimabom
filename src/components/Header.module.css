@@ -13,6 +13,8 @@
 
 .logo {
     width: 130px;
+
+    cursor: pointer;
 }
 
 .subHeader ul {
