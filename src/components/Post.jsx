@@ -6,7 +6,7 @@ import img3 from "../assets/img3.png";
 import img4 from "../assets/img4.png";
 import PropTypes from 'prop-types';
 
-// import { SecondaryButton } from "./SecondaryButton";
+import { SecondaryButton } from "./SecondaryButton";
 
 export function Post(props) {
     return (
@@ -22,7 +22,6 @@ export function Post(props) {
                             </h3>
                             <img src={img1} alt="" />
                             <p>{props.text1Img}</p>
-                            {/* <SecondaryButton src="#"/> */}
                         </section>
                         <section>
                             <h3>
@@ -30,7 +29,6 @@ export function Post(props) {
                             </h3>
                             <img src={img2} alt="" />
                             <p>{props.text2Img}</p>
-                            {/* <SecondaryButton src="#"/> */}
                         </section>
                     </div>
                     <div className={styles.sideA}>
@@ -40,7 +38,6 @@ export function Post(props) {
                             </h3>
                             <img src={img3} alt="" />
                             <p>{props.text3Img}</p>
-                            {/* <SecondaryButton src="#"/> */}
                         </section>
                         <section>
                             <h3>
@@ -48,7 +45,6 @@ export function Post(props) {
                             </h3>
                             <img src={img4} alt="" />
                             <p>{props.text4Img}</p>
-                            {/* <SecondaryButton src="#"/> */}
                         </section>
                     </div>
                     <div className={styles.sideB}>
@@ -57,7 +53,15 @@ export function Post(props) {
                             {props.section3Title}
                         </h3>
                         <span>{props.author}</span>
-                        <p className={styles.contentMessage}>{props.textContent}</p>
+                        <br />
+                        <p className={styles.contentMessage}>
+                            {props.textContent}
+                            <br />
+                            <SecondaryButton
+                                src={"https://www.youtube.com/watch?v=PTq8LBuQKCQ"}
+                                content={"Clique aqui para ver o vídeo"}
+                            />
+                        </p>
                     </section>
                     <section>
                         <h3>
@@ -80,10 +84,10 @@ export function Post(props) {
                                     {props.titleAd2}
                                 </span>
                                 <br />
-                                <strong>09 de Novembro — 20h00</strong>
+                                <strong>15 de Novembro — 16h00</strong>
                                 <br />
                                 {props.ad2}
-                                <p>Palestra sobre como podemos usar a tecnologia para nos beneficiar em nossa busca pela autossuficiência financeira.
+                                <p>Vamos ter uma oficina de artesanato.
                                 </p>
                             </li>
                             <li>
@@ -91,19 +95,28 @@ export function Post(props) {
                                     {props.titleAd3}
                                 </span>
                                 <br />
-                                <strong>11 de Novembro — 16h00</strong>
+                                <strong>08 de Dezembro — 18h00</strong>
                                 <br />
                                 {props.ad3}
-                                <p>Atividade para todos os jovens da ala. Teremos gincana e cinema. Todos convidados!</p>
                             </li>
                             <li>
                                 <span className={styles.titleAd}>
                                     {props.titleAd4}
                                 </span>
                                 <br />
-                                <strong>15 de Dezembro</strong>
+                                <strong>09 de Dezembro</strong>
                                 <br />
                                 {props.ad4}
+                                <p>Caso queira participar do nosso concerto de Natal, clique <a className={styles.linkDetail} href="https://chat.whatsapp.com/JwRR3yd58zZH4t2THU0LUC" target="_blank" rel="noreferrer noopener">aqui</a> para entrar no grupo do WhatsApp.</p>
+                            </li>
+                            <li>
+                                <span className={styles.titleAd}>
+                                    {props.titleAd5}
+                                </span>
+                                <br />
+                                <strong>15 de Dezembro</strong>
+                                <br />
+                                {props.ad5}
                                 <p>Será realizada apenas em dezembro, mas é pedido desde já que aqueles que têm interesse reservem suas vagas e efetuem o pagamento com antecedência. Para reservar sua vaga, basta clicar <a className={styles.linkDetail} href="https://docs.google.com/forms/d/e/1FAIpQLScmdWiAD86Eml1yu23tjN6F_i-_uoYC1uWYz5JO_ccDxUK8eA/viewform" target="_blank" rel="noreferrer noopener">aqui</a> e preencher o formuláro. Para mais informações, procurar a Presidência do Quórum de Elderes.</p>
                             </li>
                         </ul>
@@ -131,8 +144,10 @@ Post.propTypes = {
     titleAd2: PropTypes.string.isRequired,
     titleAd3: PropTypes.string.isRequired,
     titleAd4: PropTypes.string.isRequired,
+    titleAd5: PropTypes.string.isRequired,
     ad1: PropTypes.string.isRequired,
     ad2: PropTypes.string.isRequired,
     ad3: PropTypes.string.isRequired,
     ad4: PropTypes.string.isRequired,
+    ad5: PropTypes.string.isRequired,
 }
