@@ -1,4 +1,10 @@
 .button {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.button {
     color: #000;
     font-weight: 300;
     font-size: 0.85rem;
