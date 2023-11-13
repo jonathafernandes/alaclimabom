@@ -30,7 +30,7 @@ header .line {
     margin-top: 0.3rem;
 }
 
-.sideA, .sideB {
+.top, .bottom {
     display: flex;
     gap: 0.5rem;
     align-items: flex-start; 
@@ -38,11 +38,6 @@ header .line {
 
 .contentPost h3 {
     text-transform: uppercase;
-}
-
-.contentPost span {
-    font-size: 0.82rem;
-    color: var(--blue-25);
 }
 
 .contentPost p {
@@ -54,38 +49,21 @@ header .line {
     width: 80%;
 }
 
-.sideB .contentMessage {
+.bottom .contentMessage {
     background: #f6f8ff;
     border: 1px solid #e9effd;
 
     padding: 10px;
 }
 
-.sideB ul li {
-    padding: 10px;
-    margin-bottom: 1rem;
-
-    box-shadow: 0 2px 5px 0 rgba(74, 74, 74, 0.2);
-}
-
-.sideB ul li p {
-    margin-top: 0.5rem;
+.tag {
+    font-size: 0.82rem;
+    color: var(--blue-25);
 }
 
 section {
     margin-bottom: 2rem;
     flex: 1;
-}
-
-.titleAd {
-    color: var(--blue-25);
-
-    margin-bottom: 1rem;
-}
-
-.linkDetail {
-    text-decoration: underline;
-    color: blue;
 }
 
 @media (min-width: 768px) {
@@ -96,7 +74,7 @@ section {
 }
 
 @media (max-width: 768px) {
-    .sideA, .sideB{
+    .top, .bottom{
         flex-direction: column;
     }
 
