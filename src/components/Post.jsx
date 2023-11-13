@@ -4,6 +4,7 @@ import img1 from "../assets/img1.png";
 import img2 from "../assets/img2.png";
 import img3 from "../assets/img3.png";
 import img4 from "../assets/img4.png";
+import img5 from "../assets/img5.jpeg";
 import PropTypes from 'prop-types';
 
 import { SecondaryButton } from "./SecondaryButton";
@@ -21,14 +22,14 @@ export function Post(props) {
                         <h3>
                             {props.news1Title}
                         </h3>
-                        <img src={img1} alt="" />
+                        <img className={styles.newsImg} src={img1} alt="" />
                         <p>{props.text1Img}</p>
                     </section>
                     <section>
                         <h3>
                             {props.news2Title}
                         </h3>
-                        <img src={img2} alt="" />
+                        <img className={styles.newsImg} src={img2} alt="" />
                         <p>{props.text2Img}</p>
                     </section>
                 </div>
@@ -37,22 +38,20 @@ export function Post(props) {
                         <h3>
                             {props.news3Title}
                         </h3>
-                        <img src={img3} alt="" />
+                        <img className={styles.newsImg} src={img3} alt="" />
                         <p>{props.text3Img}</p>
                     </section>
                     <section>
                         <h3>
                             {props.news4Title}
                         </h3>
-                        <img src={img4} alt="" />
+                        <img className={styles.newsImg} src={img4} alt="" />
                         <p>{props.text4Img}</p>
                     </section>
                 </div>
                 <div className={styles.bottom}>
                 <section>
-                    <h3>
-                        {props.section3Title}
-                    </h3>
+                    <h3>Mensagem para os membros</h3>
                     <span className={styles.tag}>{props.author}</span>
                     <br />
                     <p className={styles.contentMessage}>
@@ -63,6 +62,19 @@ export function Post(props) {
                             content={"Clique aqui para ver o vídeo"}
                         />
                     </p>
+                    <div className={styles.lesson}>
+                        <h3>Lição do Quórum de Élderes</h3>
+                        <span>Próxima aula: {props.lessonDate}</span>
+                        <a href="https://www.churchofjesuschrist.org/study/general-conference/2023/10/26choi?lang=por" target="_blank" rel="noreferrer">
+                            <div className={styles.contentLesson}>
+                                <img className={styles.lessonImg} src={img5} alt="" />
+                                <div>
+                                    <p>{props.lessonTitle}</p>
+                                    <span>{props.teacher}</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </section>
                 <section>
                     < Ads />

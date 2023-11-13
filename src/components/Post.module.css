@@ -23,7 +23,7 @@ header .line {
     justify-content: center;
 }
 
-.contentPost img {
+.newsImg {
     flex: 1;
     max-width: 100%;
     height: auto;
@@ -56,6 +56,23 @@ header .line {
     padding: 10px;
 }
 
+.lesson {
+    margin: 4.5rem 0;
+}
+
+.contentLesson {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.75rem;
+}
+
+.lessonImg {
+    width: 80px;
+    
+    border-radius: 8px;
+}
+
 .tag {
     font-size: 0.82rem;
     color: var(--blue-25);
@@ -67,7 +84,7 @@ section {
 }
 
 @media (min-width: 768px) {
-    .contentPost img {
+    .newsImg {
         width: 500px;
         flex: 0 0 calc(50% - 10px);
     }
