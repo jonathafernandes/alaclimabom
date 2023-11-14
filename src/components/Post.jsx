@@ -94,7 +94,9 @@ Post.propTypes = {
     news2Title: PropTypes.string.isRequired,
     news3Title: PropTypes.string.isRequired,
     news4Title: PropTypes.string.isRequired,
-    section3Title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
     textContent: PropTypes.string.isRequired,
+    lessonDate: PropTypes.string.isRequired,
+    lessonTitle: PropTypes.string.isRequired,
+    teacher: PropTypes.string.isRequired,
 }

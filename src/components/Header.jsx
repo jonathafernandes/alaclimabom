@@ -1,9 +1,9 @@
 import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { List } from '@phosphor-icons/react';
 import styles from './Header.module.css';
 import logo from '../assets/logo.png';
 import iconDetail from '../assets/detail.svg';
-import { Link, useLocation } from 'react-router-dom';
-import { List } from '@phosphor-icons/react';
 
 export function Header() {
     const location = useLocation();
@@ -44,7 +44,7 @@ export function Header() {
                     </li>
                     {isHomePage && (
                         <li>
-                            <a onClick={() => scrollToSection('post')} href="#post" onClick={closeMenu}>
+                            <a onClick={() => { scrollToSection('post'); closeMenu(); }} href="#post">
                                 Notícias
                             </a>
                         </li>
