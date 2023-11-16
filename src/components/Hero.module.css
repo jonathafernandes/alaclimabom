@@ -19,24 +19,20 @@
     margin: 0.5rem 0;
 }
 
-.contentHero p {
+.contentHero .contentText {
     margin-bottom: 1.5em;
+
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 0.9rem;
 }
 
-/* .button {
-    background: var(--white);
-    border: 1px solid var(--blue-25);
-    color: var(--blue-25);
-    
-    padding: 0.5rem 1rem;
-
-    transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+.contentHero .contentText strong {
+    font-size: 0.8rem;
 }
 
-.button:hover {
-    background: #006184;
-    color: var(--white);
-} */
+.contentHero .contentText strong svg {
+    margin-right: 0.2rem;
+}
 
 @media (max-width: 482px) {
     .contentHero {

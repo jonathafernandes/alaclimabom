@@ -9,6 +9,7 @@ import PropTypes from 'prop-types';
 
 import { SecondaryButton } from "./SecondaryButton";
 import { Ads } from "./Ads";
+import { ArrowSquareOut } from "@phosphor-icons/react";
 
 export function Post(props) {
     return (
@@ -60,6 +61,7 @@ export function Post(props) {
                         <SecondaryButton
                             src={"https://www.youtube.com/watch?v=PTq8LBuQKCQ"}
                             content={"Clique aqui para ver o vídeo"}
+                            icon={<ArrowSquareOut size={15} />}
                         />
                     </p>
                     <div className={styles.lesson}>
@@ -94,7 +96,9 @@ Post.propTypes = {
     news2Title: PropTypes.string.isRequired,
     news3Title: PropTypes.string.isRequired,
     news4Title: PropTypes.string.isRequired,
-    section3Title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
     textContent: PropTypes.string.isRequired,
+    lessonDate: PropTypes.string.isRequired,
+    lessonTitle: PropTypes.string.isRequired,
+    teacher: PropTypes.string.isRequired,
 }

@@ -3,7 +3,12 @@ import PropTypes from 'prop-types';
 
 export function PrimaryButton(props) {
     return (
-        <a className={styles.button} target="_blank" href={props.href} rel="noreferrer noopener">
+        <a
+            className={styles.button}
+            target="_blank"
+            rel="noreferrer noopener"
+            href={props.href}
+            onClick={props.feature}>
             {props.text}
             {props.icon}
         </a>
@@ -11,7 +16,8 @@ export function PrimaryButton(props) {
 }
 
 PrimaryButton.propTypes = {
-    href: PropTypes.string.isRequired,
+    href: PropTypes.string,
     text: PropTypes.string.isRequired,
-    icon: PropTypes.element
+    icon: PropTypes.element,
+    feature: PropTypes.func
 }

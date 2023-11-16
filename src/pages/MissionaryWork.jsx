@@ -3,7 +3,7 @@ import { Header } from "../components/Header";
 import { useState } from "react";
 import { WhatsappLogo } from "@phosphor-icons/react";
 import { Goals } from "../components/Goals";
-
+import { PrimaryButton } from "../components/PrimaryButton";
 
 import iconMissionary from "../assets/missionary.svg"
 import styles from "./MissionaryWork.module.css";
@@ -15,6 +15,8 @@ export function MissionaryWork() {
     const handleSendWhatsAppMessage = () => {
         const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=Olá Elderes! Gostaria que vocês conhecessem uma pessoa, se chama ${encodeURIComponent(message)}.`;
         window.open(url);
+
+        setMessage('')
     };
 
     return (
@@ -31,12 +33,11 @@ export function MissionaryWork() {
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                     />
-                    <button className={styles.button} onClick={handleSendWhatsAppMessage}>
-                        <span>
-                            Enviar no WhatsApp
-                        </span>
-                        <WhatsappLogo size={20} />
-                    </button>
+                    <PrimaryButton
+                        text={"Enviar no WhatsApp"}
+                        feature={handleSendWhatsAppMessage}
+                        icon={<WhatsappLogo size={20} />}
+                    />
                 </form>
                 <div className={styles.goals}>
                     <h2>Metas da ala</h2>
