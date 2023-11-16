@@ -3,11 +3,10 @@ import { Header } from "../components/Header";
 import { useState } from "react";
 import { WhatsappLogo } from "@phosphor-icons/react";
 import { Goals } from "../components/Goals";
-
+import { PrimaryButton } from "../components/PrimaryButton";
 
 import iconMissionary from "../assets/missionary.svg"
 import styles from "./MissionaryWork.module.css";
-import { PrimaryButton } from "../components/PrimaryButton";
 
 export function MissionaryWork() {
     const [message, setMessage] = useState('');
