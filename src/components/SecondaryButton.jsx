@@ -16,8 +16,8 @@ export function SecondaryButton(props) {
 }
 
 SecondaryButton.propTypes = {
-    src: PropTypes.string.isRequired,
+    src: PropTypes.string,
     content: PropTypes.string.isRequired,
     icon: PropTypes.element,
-    feature: PropTypes.element
+    feature: PropTypes.func
 }
