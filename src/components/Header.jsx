@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { List } from '@phosphor-icons/react';
+import { List, X } from '@phosphor-icons/react';
 import styles from './Header.module.css';
-import logo from '../assets/logo.png';
+// import logo from '../assets/logo.png';
 import iconDetail from '../assets/detail.svg';
 
 export function Header() {
@@ -33,7 +33,7 @@ export function Header() {
                 <img className={styles.detailImg} src={iconDetail} alt="" />
             </div>
             <button className={styles.menuButton} onClick={toggleMenu}>
-                <List size={32} />
+                {isMenuOpen ? <X size={25} /> : <List size={25} />}
             </button>
             <nav className={`${styles.navigation} ${isMenuOpen ? styles.showMenu : ''}`}>
                 <ul>
@@ -62,7 +62,7 @@ export function Header() {
                 </ul>
             </nav>
             <Link to="/">
-                <img className={styles.logo} src={logo} alt="" />
+                {/* <img className={styles.logo} src={logo} alt="" /> */}
             </Link>
         </header>
     );

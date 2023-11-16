@@ -19,7 +19,7 @@
 .detail {
     background-color: var(--blue-25);
 
-    width: 50px;
+    width: 43px;
 }
 
 .detailImg {
@@ -36,7 +36,7 @@
 }
 
 .logo {
-    width: 130px;
+    width: 63px;
 
     cursor: pointer;
 }
