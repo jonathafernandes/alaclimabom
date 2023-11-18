@@ -17,11 +17,7 @@ export function Hero() {
                 <br />
                 <strong>
                     <Info size={15} />
-                    <p>
-                        A Ala Clima Bom é uma unidade de A Igreja de Jesus Cristo dos Santos dos Últimos Dias.
-                        <br />
-                        Quer saber mais sobre a Igreja? Clique no botão abaixo.
-                    </p>
+                    A Ala Clima Bom é uma unidade de A Igreja de Jesus Cristo dos Santos dos Ultimos Dias. Quer saber mais sobre a Igreja? Clique no botão abaixo.
                 </strong>
             </div>
             <PrimaryButton 
