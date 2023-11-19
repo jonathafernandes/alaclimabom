@@ -21,20 +21,13 @@ export function Ads() {
         },
         {
             id: 2,
-            tag: 'Atividade',
-            title: 'Atividade da Sociedade de Socorro',
-            date: '15 de Novembro — 16h00',
-            content: 'Vamos ter uma oficina de artesanato.'
-        },
-        {
-            id: 3,
             tag: 'Natal',
             title: 'Contraternização de Natal',
             date: '08 de Dezembro — 18h00',
             content: ''
         },
         {
-            id: 4,
+            id: 3,
             tag: 'Natal',
             title: 'Concerto de Natal',
             date: '09 de Dezembro',
@@ -43,7 +36,7 @@ export function Ads() {
             }
         },
         {
-            id: 5,
+            id: 4,
             tag: 'Templo',
             title: 'Caravana ao templo',
             date: '15 de Dezembro',

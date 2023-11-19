@@ -2,20 +2,16 @@ import styles from "./Post.module.css";
 
 import img1 from "../assets/img1.png";
 import img2 from "../assets/img2.png";
-import img3 from "../assets/img3.png";
-import img4 from "../assets/img4.png";
 import img5 from "../assets/img5.jpeg";
 import PropTypes from 'prop-types';
 
-import { SecondaryButton } from "./SecondaryButton";
 import { Ads } from "./Ads";
-import { ArrowSquareOut } from "@phosphor-icons/react";
 
 export function Post(props) {
     return (
         <div className={styles.content} id="post">
             <header>
-                <span className={styles.date}>16/10 à 29/10 <div className={styles.line}></div></span>
+                <span className={styles.date}>12/11 à 11/10 <div className={styles.line}></div></span>
             </header>
             <div className={styles.contentPost}>
                 <div className={styles.top}>
@@ -34,7 +30,7 @@ export function Post(props) {
                         <p>{props.text2Img}</p>
                     </section>
                 </div>
-                <div className={styles.top}>
+                {/* <div className={styles.top}>
                     <section>
                         <h3>
                             {props.news3Title}
@@ -49,7 +45,7 @@ export function Post(props) {
                         <img className={styles.newsImg} src={img4} alt="" />
                         <p>{props.text4Img}</p>
                     </section>
-                </div>
+                </div> */}
                 <div className={styles.bottom}>
                 <section>
                     <h3>Mensagem para os membros</h3>
@@ -57,12 +53,6 @@ export function Post(props) {
                     <br />
                     <p className={styles.contentMessage}>
                         {props.textContent}
-                        <br />
-                        <SecondaryButton
-                            src={"https://www.youtube.com/watch?v=PTq8LBuQKCQ"}
-                            content={"Clique aqui para ver o vídeo"}
-                            icon={<ArrowSquareOut size={15} />}
-                        />
                     </p>
                     <div className={styles.lesson}>
                         <h3>Lição do Quórum de Élderes</h3>
