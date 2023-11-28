@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { List, X } from '@phosphor-icons/react';
+// import { MagicCard } from "react-magic-motion";
+
 import styles from './Header.module.css';
 import logo from '../assets/logo.png';
 import iconDetail from '../assets/detail.svg';

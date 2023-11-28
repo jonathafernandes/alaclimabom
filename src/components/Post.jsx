@@ -11,7 +11,7 @@ export function Post(props) {
     return (
         <div className={styles.content} id="post">
             <header>
-                <span className={styles.date}>12/11 à 11/10 <div className={styles.line}></div></span>
+                <span className={styles.date}>12/11 à 19/11 <div className={styles.line}></div></span>
             </header>
             <div className={styles.contentPost}>
                 <div className={styles.top}>
