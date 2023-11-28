@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { CaretDown, DownloadSimple } from "@phosphor-icons/react";
 import { PrimaryButton } from "./PrimaryButton";
 import { SecondaryButton } from "./SecondaryButton";
-import { MagicMotion } from "react-magic-motion";
 
 import styles from "./Lunches.module.css";
 
@@ -47,35 +46,33 @@ export function Lunches() {
 
     return (
         <>
-            <MagicMotion>
-                <div className={styles.lunches}>
-                    <ul className={styles.lunchesList}>
-                        {visibleLunches.map((lunch) => (
-                        <React.Fragment key={lunch.id}>
-                            <li>
-                            <span className={styles.date}>{lunch.date}</span>
-                            <strong>{lunch.name}</strong>
-                            <span className={styles.contact}>{lunch.contact}</span>
-                            </li>
-                            <hr />
-                        </React.Fragment>
-                        ))}
-                    </ul>
-                    {visibleCount < lunches.length && (
-                        < SecondaryButton
-                            feature={showMore}
-                            content={"Mostra tudo"}
-                            icon={<CaretDown size={15} />}
-                        />
-                    )}
-                    <p>Clique no botão abaixo para baixar o calendário de almoços.</p>
-                    <PrimaryButton
-                        href={"./src/assets/calendario-almoços.jpeg"}
-                        text={"Download"}
-                        icon={<DownloadSimple size={20} />}
+            <div className={styles.lunches}>
+                <ul className={styles.lunchesList}>
+                    {visibleLunches.map((lunch) => (
+                    <React.Fragment key={lunch.id}>
+                        <li>
+                        <span className={styles.date}>{lunch.date}</span>
+                        <strong>{lunch.name}</strong>
+                        <span className={styles.contact}>{lunch.contact}</span>
+                        </li>
+                        <hr />
+                    </React.Fragment>
+                    ))}
+                </ul>
+                {visibleCount < lunches.length && (
+                    < SecondaryButton
+                        feature={showMore}
+                        content={"Mostra tudo"}
+                        icon={<CaretDown size={15} />}
                     />
-                </div>
-            </MagicMotion>
+                )}
+                <p>Clique no botão abaixo para baixar o calendário de almoços.</p>
+                <PrimaryButton
+                    href={"./src/assets/calendario-almoços.jpeg"}
+                    text={"Download"}
+                    icon={<DownloadSimple size={20} />}
+                />
+            </div>
         </>
     );
 }
