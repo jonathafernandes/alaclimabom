@@ -2,7 +2,6 @@ import styles from "./Post.module.css";
 
 import img1 from "../assets/img1.png";
 import img2 from "../assets/img2.png";
-import img5 from "../assets/img5.jpeg";
 import PropTypes from 'prop-types';
 
 import { Ads } from "./Ads";
@@ -11,7 +10,7 @@ export function Post(props) {
     return (
         <div className={styles.content} id="post">
             <header>
-                <span className={styles.date}>12/11 à 19/11 <div className={styles.line}></div></span>
+                <span className={styles.date}>20/11 à 26/11 <div className={styles.line}></div></span>
             </header>
             <div className={styles.contentPost}>
                 <div className={styles.top}>
@@ -30,7 +29,9 @@ export function Post(props) {
                         <p>{props.text2Img}</p>
                     </section>
                 </div>
-                {/* <div className={styles.top}>
+                {/* TO REMEMBER: manter estilo de posicionamento
+
+                <div className={styles.top}>
                     <section>
                         <h3>
                             {props.news3Title}
@@ -59,7 +60,9 @@ export function Post(props) {
                         <span>Próxima aula: {props.lessonDate}</span>
                         <a href="https://www.churchofjesuschrist.org/study/general-conference/2023/10/26choi?lang=por" target="_blank" rel="noreferrer">
                             <div className={styles.contentLesson}>
-                                <img className={styles.lessonImg} src={img5} alt="" />
+                                {/*TO REMEMBER: manter estrutura
+
+                                <img className={styles.lessonImg} src={img5} alt="" /> */}
                                 <div>
                                     <p>{props.lessonTitle}</p>
                                     <span>{props.teacher}</span>
@@ -80,12 +83,8 @@ export function Post(props) {
 Post.propTypes = {
     text1Img: PropTypes.string.isRequired,
     text2Img: PropTypes.string.isRequired,
-    text3Img: PropTypes.string.isRequired,
-    text4Img: PropTypes.string.isRequired,
     news1Title: PropTypes.string.isRequired,
     news2Title: PropTypes.string.isRequired,
-    news3Title: PropTypes.string.isRequired,
-    news4Title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
     textContent: PropTypes.string.isRequired,
     lessonDate: PropTypes.string.isRequired,
