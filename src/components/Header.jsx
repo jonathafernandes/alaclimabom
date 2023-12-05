@@ -19,14 +19,6 @@ export function Header() {
         setMenuOpen(false);
     };
 
-    // const scrollToSection = (id) => {
-    //     const element = document.getElementById(id);
-    //     if (element) {
-    //         element.scrollIntoView({ behavior: 'smooth' });
-    //         closeMenu();
-    //     }
-    // };
-
     return (
         <header className={styles.header}>
             <div className={styles.contentDetail}>
