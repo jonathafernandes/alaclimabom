@@ -1,28 +1,32 @@
-import { Info } from "@phosphor-icons/react";
 import { PrimaryButton } from "./PrimaryButton";
+import { CaretDown } from "@phosphor-icons/react";
 
 import styles from "./Hero.module.css";
 
 export function Hero() {
+
     return (
         <div className={styles.contentHero}>
             <div className={styles.lineDetail}></div>
             <h2>
-                Seja bem-vindo(a)!
+                Celebre o nascimento de Jesus Cristo
             </h2>
             <div className={styles.contentText}>
                 <p>
-                    Aqui você relembra o que rolou durante a semana na Ala Clima Bom.
+                    Dê mais significado ao Natal
                 </p>
                 <br />
+                {/* TO REMEMBER: ainda será usado
                 <strong>
                     <Info size={15} />
                     A Ala Clima Bom é uma unidade de A Igreja de Jesus Cristo dos Santos dos Ultimos Dias. Quer saber mais sobre a Igreja? Clique no botão abaixo.
-                </strong>
+                </strong> */}
             </div>
-            <PrimaryButton 
-                href={"https://www.vindeacristo.org/?lang=por"}
+            <PrimaryButton
+                href={"#christmas"}
                 text={"Saiba mais"}
+                target={"_self"}
+                icon={<CaretDown size={15} />}
             />
         </div>
     )

@@ -35,6 +35,7 @@ export function MissionaryWork() {
                     />
                     <PrimaryButton
                         text={"Enviar no WhatsApp"}
+                        target={"_blank"}
                         feature={handleSendWhatsAppMessage}
                         icon={<WhatsappLogo size={20} />}
                     />
