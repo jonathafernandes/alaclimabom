@@ -7,7 +7,7 @@ import styles from "./Christmas.module.css";
 
 export function Christmas() {
     return (
-        <div className={styles.content}>
+        <div className={styles.content} id="christmas">
             <h2>Cristo é o Natal: Comemorar o Nascimento de Jesus</h2>
             <div className={styles.lineDetail}></div>
             <p>Siga o exemplo de Jesus e ame as pessoas ao seu redor, compartilhe a alegria e deixe sua luz brilhar nesta época de Natal.</p>
@@ -16,6 +16,7 @@ export function Christmas() {
                 text={"Seja a luz do mundo servindo"}
                 icon={<ArrowSquareOut size={20} />}
                 href={"https://www.vindeacristo.org/seja-a-luz-do-mundo"}
+                target={"_blank"}
             />
         </div>
     )

@@ -69,6 +69,7 @@ export function Lunches() {
                 <p>Clique no botão abaixo para baixar o calendário de almoços.</p>
                 <PrimaryButton
                     href={"./src/assets/calendario-almoços.jpeg"}
+                    target={"_blank"}
                     text={"Download"}
                     icon={<DownloadSimple size={20} />}
                 />

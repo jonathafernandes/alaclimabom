@@ -5,9 +5,9 @@ export function PrimaryButton(props) {
     return (
         <a
             className={styles.button}
-            target="_blank"
             rel="noreferrer noopener"
             href={props.href}
+            target={props.target}
             onClick={props.feature}>
             {props.text}
             {props.icon}
@@ -19,5 +19,6 @@ PrimaryButton.propTypes = {
     href: PropTypes.string,
     text: PropTypes.string.isRequired,
     icon: PropTypes.element,
-    feature: PropTypes.func
+    feature: PropTypes.func,
+    target: PropTypes.bool
 }

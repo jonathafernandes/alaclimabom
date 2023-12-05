@@ -1,14 +1,9 @@
 import { PrimaryButton } from "./PrimaryButton";
+import { CaretDown } from "@phosphor-icons/react";
 
 import styles from "./Hero.module.css";
 
 export function Hero() {
-    // const scrollToSection = (id) => {
-    //     const element = document.getElementById(id);
-    //     if (element) {
-    //         element.scrollIntoView({ behavior: 'smooth' });
-    //     }
-    // };
 
     return (
         <div className={styles.contentHero}>
@@ -28,9 +23,10 @@ export function Hero() {
                 </strong> */}
             </div>
             <PrimaryButton
-                // omclick={() => { scrollToSection('christmas'); }}
-                // href={"#christmas"}
+                href={"#christmas"}
                 text={"Saiba mais"}
+                target={"_self"}
+                icon={<CaretDown size={15} />}
             />
         </div>
     )

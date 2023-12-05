@@ -19,13 +19,13 @@ export function Header() {
         setMenuOpen(false);
     };
 
-    const scrollToSection = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-            closeMenu();
-        }
-    };
+    // const scrollToSection = (id) => {
+    //     const element = document.getElementById(id);
+    //     if (element) {
+    //         element.scrollIntoView({ behavior: 'smooth' });
+    //         closeMenu();
+    //     }
+    // };
 
     return (
         <header className={styles.header}>
@@ -45,7 +45,7 @@ export function Header() {
                     </li>
                     {isHomePage && (
                         <li>
-                            <a onClick={() => { scrollToSection('post'); closeMenu(); }} href="#post">
+                            <a href="#post">
                                 Notícias
                             </a>
                         </li>
