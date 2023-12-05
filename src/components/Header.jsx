@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { List, X } from '@phosphor-icons/react';
+import { Link as ScrollLink } from 'react-scroll';
 
 import styles from './Header.module.css';
 import logo from '../assets/logo.png';
@@ -37,9 +38,15 @@ export function Header() {
                     </li>
                     {isHomePage && (
                         <li>
-                            <a href="#post">
+                            <ScrollLink
+                                to="post"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                onClick={closeMenu}
+                            >
                                 Notícias
-                            </a>
+                            </ScrollLink>
                         </li>
                     )}
                     <li>

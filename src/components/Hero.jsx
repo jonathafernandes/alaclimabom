@@ -1,5 +1,7 @@
 import { PrimaryButton } from "./PrimaryButton";
 import { CaretDown } from "@phosphor-icons/react";
+import { Link as ScrollLink } from 'react-scroll';
+
 
 import styles from "./Hero.module.css";
 
@@ -22,12 +24,19 @@ export function Hero() {
                     A Ala Clima Bom é uma unidade de A Igreja de Jesus Cristo dos Santos dos Ultimos Dias. Quer saber mais sobre a Igreja? Clique no botão abaixo.
                 </strong> */}
             </div>
-            <PrimaryButton
-                href={"#christmas"}
-                text={"Saiba mais"}
-                target={"_self"}
-                icon={<CaretDown size={15} />}
-            />
+            <ScrollLink
+                to="christmas"
+                spy={true}
+                smooth={true}
+                duration={500}
+            >
+                <PrimaryButton
+                    href={"#christmas"}
+                    text={"Saiba mais"}
+                    target={"_self"}
+                    icon={<CaretDown size={15} />}
+                />  
+            </ScrollLink>
         </div>
     )
 }

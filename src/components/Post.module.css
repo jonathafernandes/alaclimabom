@@ -32,7 +32,7 @@ header .line {
 
 .top, .bottom {
     display: flex;
-    gap: 0.5rem;
+    gap: 2rem;
     align-items: flex-start; 
 }
 
