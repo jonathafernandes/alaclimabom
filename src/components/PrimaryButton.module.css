@@ -11,6 +11,6 @@
 }
 
 .button:hover {
-    background: #006184;
+    background: var(--blue-25);
     color: var(--white);
 }

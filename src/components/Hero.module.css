@@ -1,7 +1,7 @@
 .lineDetail {
     width: 3.5rem;
     height: 0.25rem;
-    background-color: rgb(0, 125, 165);
+    background-color: var(--blue-25);
 }
 
 .contentHero {
