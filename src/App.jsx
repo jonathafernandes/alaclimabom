@@ -2,6 +2,7 @@ import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Post } from "./components/Post";
+import { Christmas } from "./components/Christmas";
 
 import "./index.css";
 
@@ -23,6 +24,7 @@ export function App() {
           lessonTitle={'Em breve...'}
           teacher={''}
           />
+          <Christmas />
       </main>
       <Footer />
     </>
