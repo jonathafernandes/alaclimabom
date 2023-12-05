@@ -2,13 +2,10 @@
     display: flex;
     align-items: center;
     gap: 0.1rem;
-}
 
-.button {
     color: #000;
     font-weight: 300;
-    /* TO REMEMBER: ainda será usado
-    font-size: 0.85rem; */
+    font-size: 0.85rem;
     
     padding: 0.2rem;
 
