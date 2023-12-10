@@ -5,3 +5,5 @@
 
 **Gitflow:**
 _Seguir a padronização do [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)_
+
+Layout inspirado em _https://br.aigrejadejesuscristo.org/_.
