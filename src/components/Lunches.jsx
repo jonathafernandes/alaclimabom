@@ -42,7 +42,7 @@ export function Lunches() {
     const visibleLunches = lunches.slice(0, visibleCount);
 
     function showMore() {
-        setVisibleCount(visibleCount + 16);
+        setVisibleCount(visibleCount + 17);
     }
 
     return (
