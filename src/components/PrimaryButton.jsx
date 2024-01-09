@@ -20,5 +20,5 @@ PrimaryButton.propTypes = {
     text: PropTypes.string.isRequired,
     icon: PropTypes.element,
     feature: PropTypes.func,
-    target: PropTypes.bool
+    target: PropTypes.string
 }

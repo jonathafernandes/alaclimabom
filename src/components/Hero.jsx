@@ -1,6 +1,5 @@
 import { PrimaryButton } from "./PrimaryButton";
-import { CaretDown } from "@phosphor-icons/react";
-import { Link as ScrollLink } from 'react-scroll';
+// import { Link as ScrollLink } from 'react-scroll';
 
 
 import styles from "./Hero.module.css";
@@ -11,12 +10,12 @@ export function Hero() {
         <div className={styles.contentHero}>
             <div className={styles.lineDetail}></div>
             <h2>
-                Celebre o nascimento de Jesus Cristo
+                Aprenda sobre Jesus Cristo
             </h2>
             <div className={styles.contentText}>
-                <p>
-                    Dê mais significado ao Natal
-                </p>
+                <strong>
+                    Conheça e siga-O
+                </strong>
                 <br />
                 {/* TO REMEMBER: ainda será usado
                 <strong>
@@ -24,19 +23,11 @@ export function Hero() {
                     A Ala Clima Bom é uma unidade de A Igreja de Jesus Cristo dos Santos dos Ultimos Dias. Quer saber mais sobre a Igreja? Clique no botão abaixo.
                 </strong> */}
             </div>
-            <ScrollLink
-                to="christmas"
-                spy={true}
-                smooth={true}
-                duration={500}
-            >
-                <PrimaryButton
-                    href={"#christmas"}
-                    text={"Saiba mais"}
-                    target={"_self"}
-                    icon={<CaretDown size={15} />}
-                />  
-            </ScrollLink>
+            <PrimaryButton
+                href={"https://www.vindeacristo.org/crencas"}
+                text={"Saiba mais"}
+                target={"_blank"}
+            />  
         </div>
     )
 }

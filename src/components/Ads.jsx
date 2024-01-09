@@ -7,10 +7,10 @@ export function Ads() {
     const ads = [
         {
             id: 1,
-            tag: 'Jovens',
-            title: 'Formatura do Seminário e Instituto',
-            date: '17 de Dezembro — 19h00',
-            content: 'O evento será realizado na seda da Estaca Maceió Brasil.'
+            tag: 'Todos os membros',
+            title: 'Reunião Familiar',
+            date: '09 de Janeiro — 19h00',
+            content: 'Teremos uma renião familiar no dia 09 de Janeiro, às 19h00. Todos os membros são convidados a participar.'
         }
     ]
 

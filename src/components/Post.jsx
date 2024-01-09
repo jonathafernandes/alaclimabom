@@ -58,7 +58,7 @@ export function Post(props) {
                     <div className={styles.lesson}>
                         <h3>Lição do Quórum de Élderes</h3>
                         <span>Próxima aula: {props.lessonDate}</span>
-                        <a href="https://www.churchofjesuschrist.org/study/general-conference/2023/10/26choi?lang=por" target="_blank" rel="noreferrer">
+                        <a href="https://www.churchofjesuschrist.org/study/general-conference/2023/10/16ardern?lang=por" target="_blank" rel="noreferrer">
                             <div className={styles.contentLesson}>
                                 {/*TO REMEMBER: manter estrutura
 

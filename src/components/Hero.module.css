@@ -1,11 +1,7 @@
-.lineDetail {
-    width: 3.5rem;
-    height: 0.25rem;
-    background-color: var(--blue-25);
-}
-
 .contentHero {
-    background: #f5f4f4;
+    background: url('/src/assets/youngsung_kim_shall_not_want.webp') no-repeat center;
+    background-size: cover;
+    color: var(--white);
 
     padding: 5rem;
     margin-bottom: 1rem;
@@ -27,10 +23,6 @@
 
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 0.9rem;
-}
-
-.contentHero .contentText strong {
-    font-size: 0.8rem;
 }
 
 .contentHero .contentText strong svg {
