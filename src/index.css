@@ -36,3 +36,9 @@ main {
   margin: 0 auto;
   padding: 0 2rem;
 }
+
+@media (max-width: 425px) {
+  main {
+    padding: 0 1rem;
+  }
+}
