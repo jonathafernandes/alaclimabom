@@ -1,5 +1,4 @@
 import { PrimaryButton } from "./PrimaryButton";
-// import { Link as ScrollLink } from 'react-scroll';
 
 
 import styles from "./Hero.module.css";

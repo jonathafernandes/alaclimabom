@@ -12,6 +12,7 @@ export function App() {
       <Header />
       <main>
         <Hero />
+        <h3>NOTÍCIAS RECENTES</h3>
         <Post
           news1Title={'Novos batismos'}
           news2Title={'Atividade dos jovens'}
