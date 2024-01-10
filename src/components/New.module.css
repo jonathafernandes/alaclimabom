@@ -1,0 +1,19 @@
+.content {
+    border-bottom: 1px solid var(--gray);
+
+    max-width: fit-content;
+    width: 40%;
+}
+
+.img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    margin-top: 0.3rem;
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 100%;
+    }
+}

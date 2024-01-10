@@ -6,6 +6,7 @@ import img3 from "../assets/img3.png";
 import PropTypes from 'prop-types';
 
 import { Ads } from "./Ads";
+import { New } from "./New";
 
 export function Post(props) {
     return (
@@ -14,67 +15,51 @@ export function Post(props) {
                 <span className={styles.date}>08/12 à 07/01 <div className={styles.line}></div></span>
             </header>
             <div className={styles.contentPost}>
-                <div className={styles.top}>
-                    <section>
-                        <h3>
-                            {props.news1Title}
-                        </h3>
-                        <img className={styles.newsImg} src={img1} alt="" />
-                        <p>{props.text1Img}</p>
-                    </section>
-                    <section>
-                        <h3>
-                            {props.news2Title}
-                        </h3>
-                        <img className={styles.newsImg} src={img2} alt="" />
-                        <p>{props.text2Img}</p>
-                    </section>
-                </div>
-                {/* TO REMEMBER: manter estilo de posicionamento */}
-
-                <div className={styles.top}>
-                    <section>
-                        <h3>
-                            {props.news3Title}
-                        </h3>
-                        <img className={styles.newsImg} src={img3} alt="" />
-                        <p>{props.text3Img}</p>
-                    </section>
-                    {/* <section>
-                        <h3>
-                            {props.news4Title}
-                        </h3>
-                        <img className={styles.newsImg} src={img4} alt="" />
-                        <p>{props.text4Img}</p>
-                    </section> */}
-                </div>
+                <section className={styles.news}>
+                    < New 
+                        title={'Confraternização de Natal'}
+                        description={'No dia 08/12 tivemos uma confraternização de Natal com todos os membros da ala.'}
+                        src={img1}
+                    />
+                    < New 
+                        title={'Cestas para os missionários'}
+                        description={'As irmãs da Sociedade de Socorro uniram esforços para arrecadar alimentos, com o propósito de preparar cestas para presentear os missionários.'}
+                        src={img2}
+                    />
+                    < New 
+                        title={'Novo bispado'}
+                        description={'No dia 07/01, o Presidente da Estaca, Manoel Messias, anunciou o novo bispado da ala. Clesivan Carlos foi chamado como novo Bispo da ala junto com os seus conselheiros, Bruno William e Antônio Veríssimo .'}
+                        src={img3}
+                    />
+                </section>
+                
                 <div className={styles.bottom}>
-                <section>
-                    <h3>Mensagem para os membros</h3>
-                    <span className={styles.tag}>{props.author}</span>
-                    <br />
-                    <p className={styles.contentMessage}>
-                        {props.textContent}
-                    </p>
-                    <div className={styles.lesson}>
-                        <h3>Lição do Quórum de Élderes</h3>
-                        <span>Próxima aula: {props.lessonDate}</span>
-                        <a href="https://www.churchofjesuschrist.org/study/general-conference/2023/10/16ardern?lang=por" target="_blank" rel="noreferrer">
-                            <div className={styles.contentLesson}>
-                                {/*TO REMEMBER: manter estrutura
+                    <section>
+                        <h3>Mensagem para os membros</h3>
+                        <span className={styles.tag}>{props.author}</span>
+                        <br />
+                        <p className={styles.contentMessage}>
+                            {props.textContent}
+                        </p>
+                        <div className={styles.lesson}>
+                            <h3>Lição do Quórum de Élderes</h3>
+                            <span>Próxima aula: {props.lessonDate}</span>
+                            <a href="https://www.churchofjesuschrist.org/study/general-conference/2023/10/16ardern?lang=por" target="_blank" rel="noreferrer">
+                                <div className={styles.contentLesson}>
+                                    {/*TO REMEMBER: manter estrutura
 
-                                <img className={styles.lessonImg} src={img5} alt="" /> */}
-                                <div>
-                                    <p>{props.lessonTitle}</p>
-                                    <span>{props.teacher}</span>
+                                    <img className={styles.lessonImg} src={img5} alt="" /> */}
+                                    <div>
+                                        <p>{props.lessonTitle}</p>
+                                        <span>{props.teacher}</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                </section>
-                <section>
-                    < Ads />
-                </section>
+                            </a>
+                        </div>
+                    </section>
+                    <section>
+                        < Ads />
+                    </section>
                 </div>
             </div>
         </div>

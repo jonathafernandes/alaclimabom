@@ -23,14 +23,14 @@ header .line {
     justify-content: center;
 }
 
-.newsImg {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-    margin-top: 0.3rem;
+.news {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
 }
 
-.top, .bottom {
+.bottom {
     display: flex;
     gap: 2rem;
     align-items: flex-start; 
@@ -57,7 +57,7 @@ header .line {
 }
 
 .lesson {
-    margin: 4.5rem 0;
+    margin: 4rem 0;
 }
 
 .contentLesson {
@@ -83,14 +83,11 @@ section {
 }
 
 @media (min-width: 768px) {
-    .newsImg {
-        width: 500px;
-        flex: 0 0 calc(50% - 10px);
-    }
+
 }
 
 @media (max-width: 768px) {
-    .top, .bottom{
+    .news, .bottom {
         flex-direction: column;
     }
 
