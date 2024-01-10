@@ -37,7 +37,7 @@
 
 @media (max-width: 482px) {
     .contentHero {
-        padding: 3rem;
+        padding: 1.3rem;
     }
 
     .contentHero h2 {
@@ -46,6 +46,10 @@
 }
 
 @media (max-width: 375px) {
+    .contentHero {
+        padding: 1rem;
+    }
+
     .contentHero h2 {
         font-size: 1.4rem;
     }
