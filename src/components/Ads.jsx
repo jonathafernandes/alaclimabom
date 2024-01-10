@@ -10,7 +10,7 @@ export function Ads() {
             tag: 'Todos os membros',
             title: 'Reunião Familiar',
             date: '09 de Janeiro — 19h00',
-            content: 'Teremos uma renião familiar no dia 09 de Janeiro, às 19h00. Todos os membros são convidados a participar.'
+            content: 'Teremos uma reunião familiar no dia 09 de Janeiro, às 19h00. Todos os membros são convidados a participar.'
         }
     ]
 

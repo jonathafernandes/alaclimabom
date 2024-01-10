@@ -2,6 +2,7 @@ import styles from "./Post.module.css";
 
 import img1 from "../assets/img1.png";
 import img2 from "../assets/img2.png";
+import img3 from "../assets/img3.png";
 import PropTypes from 'prop-types';
 
 import { Ads } from "./Ads";
@@ -10,7 +11,7 @@ export function Post(props) {
     return (
         <div className={styles.content} id="post">
             <header>
-                <span className={styles.date}>20/11 à 26/11 <div className={styles.line}></div></span>
+                <span className={styles.date}>08/12 à 07/01 <div className={styles.line}></div></span>
             </header>
             <div className={styles.contentPost}>
                 <div className={styles.top}>
@@ -29,7 +30,7 @@ export function Post(props) {
                         <p>{props.text2Img}</p>
                     </section>
                 </div>
-                {/* TO REMEMBER: manter estilo de posicionamento
+                {/* TO REMEMBER: manter estilo de posicionamento */}
 
                 <div className={styles.top}>
                     <section>
@@ -39,14 +40,14 @@ export function Post(props) {
                         <img className={styles.newsImg} src={img3} alt="" />
                         <p>{props.text3Img}</p>
                     </section>
-                    <section>
+                    {/* <section>
                         <h3>
                             {props.news4Title}
                         </h3>
                         <img className={styles.newsImg} src={img4} alt="" />
                         <p>{props.text4Img}</p>
-                    </section>
-                </div> */}
+                    </section> */}
+                </div>
                 <div className={styles.bottom}>
                 <section>
                     <h3>Mensagem para os membros</h3>
@@ -83,8 +84,10 @@ export function Post(props) {
 Post.propTypes = {
     text1Img: PropTypes.string.isRequired,
     text2Img: PropTypes.string.isRequired,
+    text3Img: PropTypes.string.isRequired,
     news1Title: PropTypes.string.isRequired,
     news2Title: PropTypes.string.isRequired,
+    news3Title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
     textContent: PropTypes.string.isRequired,
     lessonDate: PropTypes.string.isRequired,
