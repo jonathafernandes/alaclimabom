@@ -21,7 +21,7 @@ export function Footer() {
                     <p>Reuniões todos os domingos às 10h20min.</p>
                 </div>
             </div>
-            <p>&copy; 2023 Todos os direitos reservados.</p>
+            <p>&copy; 2024 Todos os direitos reservados.</p>
         </div>
     )
 }

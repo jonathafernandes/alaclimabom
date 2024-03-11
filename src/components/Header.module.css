@@ -19,7 +19,7 @@
 }
 
 .detail {
-    background-color: var(--blue-25);
+    background-color: var(--primary);
 
     width: 43px;
 }
@@ -56,7 +56,7 @@
 }
 
 .navigation ul li a:hover {
-    color: var(--blue-25);
+    color: var(--primary);
 }
 
 

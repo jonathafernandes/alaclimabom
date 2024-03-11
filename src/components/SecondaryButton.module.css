@@ -14,5 +14,5 @@
 }
 
 .button:hover {
-    color: var(--blue-25);
+    color: var(--primary);
 }

@@ -1,8 +1,7 @@
 import styles from "./Post.module.css";
 
-import img1 from "../assets/img1.png";
-import img2 from "../assets/img2.png";
-import img3 from "../assets/img3.png";
+import imgReliefSocietyMissionaries from "../assets/relief-society-missionaries.png";
+import imgNewBishopric from "../assets/new-bishopric.png";
 import PropTypes from 'prop-types';
 
 import { Ads } from "./Ads";
@@ -17,19 +16,14 @@ export function Post(props) {
             <div className={styles.contentPost}>
                 <section className={styles.news}>
                     < New 
-                        title={'Confraternização de Natal'}
-                        description={'No dia 08/12 tivemos uma confraternização de Natal com todos os membros da ala.'}
-                        src={img1}
-                    />
-                    < New 
                         title={'Cestas para os missionários'}
                         description={'As irmãs da Sociedade de Socorro uniram esforços para arrecadar alimentos, com o propósito de preparar cestas para presentear os missionários.'}
-                        src={img2}
+                        src={imgReliefSocietyMissionaries}
                     />
                     < New 
                         title={'Novo bispado'}
-                        description={'No dia 07/01, o Presidente da Estaca, Manoel Messias, anunciou o novo bispado da ala. Clesivan Carlos foi chamado como novo Bispo da ala junto com os seus conselheiros, Bruno William e Antônio Veríssimo .'}
-                        src={img3}
+                        description={'No dia 07/01, o Presidente da Estaca, Manoel Messias, anunciou o novo bispado da ala. Clesivan Carlos foi chamado como novo Bispo da ala junto com os seus conselheiros, Bruno William e Antônio Veríssimo.'}
+                        src={imgNewBishopric}
                     />
                 </section>
                 
@@ -48,7 +42,7 @@ export function Post(props) {
                                 <div className={styles.contentLesson}>
                                     {/*TO REMEMBER: manter estrutura
 
-                                    <img className={styles.lessonImg} src={img5} alt="" /> */}
+                                    <img className={styles.lessonImg} src={} alt="" /> */}
                                     <div>
                                         <p>{props.lessonTitle}</p>
                                         <span>{props.teacher}</span>
@@ -58,7 +52,7 @@ export function Post(props) {
                         </div>
                     </section>
                     <section>
-                        < Ads />
+                        <Ads />
                     </section>
                 </div>
             </div>

@@ -75,7 +75,7 @@ header .line {
 
 .tag {
     font-size: 0.82rem;
-    color: var(--blue-25);
+    color: var(--primary);
 }
 
 section {
