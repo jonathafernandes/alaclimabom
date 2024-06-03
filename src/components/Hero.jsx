@@ -1,6 +1,5 @@
 import { PrimaryButton } from "./PrimaryButton";
 
-
 import styles from "./Hero.module.css";
 
 export function Hero() {
@@ -16,11 +15,6 @@ export function Hero() {
                     Conheça e siga-O
                 </strong>
                 <br />
-                {/* TO REMEMBER: ainda será usado
-                <strong>
-                    <Info size={15} />
-                    A Ala Clima Bom é uma unidade de A Igreja de Jesus Cristo dos Santos dos Ultimos Dias. Quer saber mais sobre a Igreja? Clique no botão abaixo.
-                </strong> */}
             </div>
             <PrimaryButton
                 href={"https://www.vindeacristo.org/crencas"}
