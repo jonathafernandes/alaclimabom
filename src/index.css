@@ -16,6 +16,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   color: var(--black);
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 a {

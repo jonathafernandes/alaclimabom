@@ -8,6 +8,7 @@
     flex-direction: column;
     gap: 2rem;
     padding: 4rem;
+    margin-top: 4rem;
 }
 
 .footer .social {
