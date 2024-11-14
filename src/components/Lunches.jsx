@@ -61,7 +61,7 @@ export function Lunches() {
                     ))}
                 </ul>
                 {visibleCount < lunches.length && (
-                    < SecondaryButton
+                    <SecondaryButton
                         feature={showMore}
                         content={"Mostra tudo"}
                         icon={<CaretDown size={15} />}

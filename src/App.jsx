@@ -1,6 +1,8 @@
+import { Ads } from "./components/Ads";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
+import { News } from "./components/News";
 
 import "./index.css";
 
@@ -11,12 +13,10 @@ export function App() {
       <Header />
       <main>
         <Hero />
-        <h2>Em breve</h2>
-        <br />
-        <br />
-        <br />
+        <News />
+        <Ads />
       </main>
-      <Footer />  
+      <Footer />
     </>
   )
 }

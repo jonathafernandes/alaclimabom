@@ -1,20 +1,32 @@
-import styles from "./New.module.css";
+import styles from "./News.module.css";
 import PropTypes from 'prop-types';
 
-export function New(props) {
+export function News() {
+    const news = [
+        
+    ];
+
     return (
         <div className={styles.content}>
-            <h3>
-                {props.title}
-            </h3>
-            <img className={styles.img} src={props.src} alt="" />
-            <p>{props.description}</p>
+            {
+                news.length === 0 ? <h4>Sem notícias recentes...</h4> :
+                <>
+                    <h3>Notícias</h3>
+                    {news.map((news) => (
+                        <div key={news.id}>
+                            <h3>{news.title}</h3>
+                            <img className={styles.img} src={news.src} alt="" />
+                            <p>{news.description}</p>
+                        </div>
+                    ))}
+                </>
+            }
         </div>
     )
 }
 
-New.propTypes = {
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    src: PropTypes.string.isRequired,
+News.propTypes = {
+    title: PropTypes.string,
+    description: PropTypes.string,
+    src: PropTypes.string,
 }
