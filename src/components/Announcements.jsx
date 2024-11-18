@@ -1,19 +1,16 @@
-import postStyles from "./Post.module.css";
-import adsStyles from "./Ads.module.css";
+import styles from "./Announcements.module.css";
 
-export function Ads() {
-    const ads = [
-
-    ]
+export function Announcements() {
+    const announcements = []
 
     return (
         <div>
-            <ul className={adsStyles.adsList}>
-                {ads.map((item) => (
+            <ul className={styles.list}>
+                {announcements.map((item) => (
                     <>
-                        <h3>Anúncios</h3><div key={item.id}>
+                        <div key={item.id}>
                             <li>
-                                <span className={postStyles.tag}>
+                                <span className={styles.tag}>
                                     {item.tag}
                                 </span>
                                 <br />

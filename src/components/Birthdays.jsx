@@ -20,7 +20,7 @@ export function Birthdays() {
     ];
 
     return (
-        <ul className={styles.birthdaysList}>
+        <ul className={styles.list}>
             {birthdaysList.map((birthday) => (
                 <React.Fragment key={birthday.id}>
                     <li>

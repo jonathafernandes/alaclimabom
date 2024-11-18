@@ -1,4 +1,3 @@
-import { Footer } from "../components/Footer";
 import { useState } from "react";
 import { WhatsappLogo } from "@phosphor-icons/react";
 import { Goals } from "../components/Goals";
@@ -43,7 +42,6 @@ export function MissionaryWork() {
                     <Goals />
                 </div>
             </main>
-            <Footer />
         </div>
     )
 }

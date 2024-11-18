@@ -1,21 +1,21 @@
-.calendarsContent h2 {
+.content h2 {
     text-align: center;
     font-size: 2.625rem;
 
     margin: 3.3rem 0;
 }
 
-.calendarsContent .lunch {
+.content .lunch {
     margin-bottom: 3.3rem;
 }
 
-.calendarsContent p {
+.content p {
     text-align: center;
 }
 
 @media (max-width: 603px) {
-    .calendarsContent h2 {
-        font-size: 2rem;   
+    .content h2 {
+        font-size: 2rem;
 
         margin: 3.3rem 0.3rem;
     }

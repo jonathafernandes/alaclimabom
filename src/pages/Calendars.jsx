@@ -1,12 +1,11 @@
 import styles from "./Calendars.module.css";
 
 import { Birthdays } from "../components/Birthdays";
-import { Footer } from "../components/Footer";
 import { Lunches } from "../components/Lunches";
 
 export function Calendars() {
     return (
-        <div className={styles.calendarsContent}>
+        <div className={styles.content}>
             <div className={styles.birthdays}>
                 <h2>Aniversariantes do mês</h2>
                 <Birthdays />
@@ -15,7 +14,6 @@ export function Calendars() {
                 <h2>Almoço dos missionários</h2>
                 <Lunches />
             </div>
-            <Footer />
         </div>
     )
 }

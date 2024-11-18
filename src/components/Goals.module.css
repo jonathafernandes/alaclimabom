@@ -1,4 +1,4 @@
-.goalsList {
+.list {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,13 +8,13 @@
     margin: 0 1rem;
 }
 
-.goalsList li {
+.list li {
     display: flex;
     flex-direction: column;
 }
 
 @media (max-width: 603px) {
-    .goalsList {
+    .list {
         flex-direction: column;
         margin: 0 4rem;
     }

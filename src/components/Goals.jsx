@@ -12,7 +12,7 @@ export function Goals() {
     ]
 
     return (
-        <ul className={styles.goalsList}>
+        <ul className={styles.list}>
         {goals.map((goal) => (
             <React.Fragment key={goal.id}>
                 <li>

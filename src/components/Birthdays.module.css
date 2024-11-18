@@ -1,4 +1,4 @@
-.birthdaysList {
+.list {
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -8,24 +8,24 @@
     margin: 0 1rem;
 }
 
-.birthdaysList li {
+.list li {
     display: flex;
     flex-direction: column;
 }
 
-.birthdaysList .date {
+.list .date {
     margin-right: 3rem;
 
     font-size: 0.85rem;
 }
 
 @media (max-width: 603px) {
-    .birthdaysList {
+    .list {
         flex-direction: column;
         margin: 0 4rem;
     }
 
-    .birthdaysList li {
+    .list li {
         flex-direction: row;
         align-items: center;
     }
