@@ -1,8 +1,7 @@
-import { Ads } from "./components/Ads";
-import { Footer } from "./components/Footer";
+import { Announcements } from "./components/Announcements";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
-import { News } from "./components/News";
+import { Updates } from "./components/Updates";
 
 import "./index.css";
 
@@ -13,10 +12,9 @@ export function App() {
       <main>
         <Header />
         <Hero />
-        {/* <News />
-        <Ads /> */}
+        <Announcements />
+        <Updates />
       </main>
-      {/* <Footer /> */}
     </>
   )
 }

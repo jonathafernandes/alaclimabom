@@ -1,5 +1,9 @@
+.content h3 {
+    margin: 2rem 0 .5rem 0;
+}
+
 .list li {
-    padding: 10px;
+    padding: .625rem;
     margin-bottom: 1rem;
 
     box-shadow: 0 2px 5px 0 rgba(74, 74, 74, 0.2);
@@ -7,4 +11,10 @@
 
 .list li p {
     margin-top: 0.5rem;
+}
+
+@media (max-width: 772px) {
+    .content {
+        margin: 0 2rem;
+    }
 }

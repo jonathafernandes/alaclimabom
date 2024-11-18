@@ -1,19 +1,36 @@
-.content {
-    border-bottom: 1px solid var(--gray);
+.content h3 {
+    margin: 2rem 0 0.5rem 0;
+}
 
-    max-width: fit-content;
-    width: 40%;
+.content .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.content .list .item {
+    flex: 1 1 calc(50% - 1rem);
+    display: flex;
+    flex-direction: column;
 }
 
 .img {
-    flex: 1;
     max-width: 100%;
     height: auto;
     margin-top: 0.3rem;
+    object-fit: cover;
 }
 
 @media (max-width: 768px) {
     .content {
+        padding: 0 2rem;
+    }
+    
+    .content .list .item {
+        flex: 1 1 100%;
+    }
+
+    .img {
         width: 100%;
     }
 }
