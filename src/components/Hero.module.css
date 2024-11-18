@@ -1,9 +1,36 @@
 .content p {
-    margin-top: .5rem;
+    margin: .5rem 0 1.5rem 0;
+}
+
+.content .information {
+    background-color: #eeeeee;
+    padding: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.content .information .hour {
+    font-weight: 600;
+}
+
+.content .information iframe {
+    width: 50%;
+    height: 100%;
+    border: none;
 }
 
 @media (max-width: 772px) {
     .content {
         margin: 0 2rem;
+    }
+
+    .content .information {
+        flex-direction: column;
+    }
+
+    .content .information iframe {
+        width: 100%;
     }
 }

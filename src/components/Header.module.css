@@ -1,5 +1,6 @@
 .content {
     background: url('/src/assets/youngsung_kim_shall_not_want.webp') no-repeat center;
+    background-size: cover;
     color: var(--white);
 
     padding: 5rem;
@@ -27,5 +28,7 @@
         align-items: flex-start;
         gap: 2rem;
         padding: 2rem;
+
+        background-size: initial;
     }
 }
