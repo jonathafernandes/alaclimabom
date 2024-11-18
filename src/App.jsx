@@ -10,13 +10,13 @@ export function App() {
 
   return (
     <>
-      <Header />
       <main>
+        <Header />
         <Hero />
-        <News />
-        <Ads />
+        {/* <News />
+        <Ads /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

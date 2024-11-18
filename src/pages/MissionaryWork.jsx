@@ -1,5 +1,4 @@
 import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
 import { useState } from "react";
 import { WhatsappLogo } from "@phosphor-icons/react";
 import { Goals } from "../components/Goals";
@@ -21,7 +20,6 @@ export function MissionaryWork() {
 
     return (
         <div className={styles.content}>
-            <Header />
             <main>
                 <p><em>Amar, compartilhar, convidar</em> são princípios para ajudá-lo a compartilhar o evangelho de maneira específica com cada um dos filhos de Deus. </p>
                 <strong>Indique um amigo aos missionários</strong>

@@ -1,56 +1,9 @@
-.contentHero {
-    background: url('/src/assets/youngsung_kim_shall_not_want.webp') no-repeat center;
-    background-size: cover;
-    color: var(--white);
-
-    padding: 5rem;
-    margin: 2rem 0 4rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+.content p {
+    margin-top: .5rem;
 }
 
-.contentHero h2 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 2.3rem;
-    font-weight: bold;
-
-    margin: 0.5rem 0;
-}
-
-.contentHero .contentText {
-    margin-bottom: 1.5em;
-
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 0.9rem;
-}
-
-.contentHero .contentText strong svg {
-    margin-right: 0.2rem;
-}
-
-@media (min-width: 1025px) {
-    .contentHero .contentText {
-        width: 50%;
-    }
-}
-
-@media (max-width: 482px) {
-    .contentHero {
-        padding: 1.3rem;
-    }
-
-    .contentHero h2 {
-        font-size: 1.6rem;
-    }
-}
-
-@media (max-width: 375px) {
-    .contentHero {
-        padding: 1rem;
-    }
-
-    .contentHero h2 {
-        font-size: 1.4rem;
+@media (max-width: 772px) {
+    .content {
+        margin: 0 2rem;
     }
 }
