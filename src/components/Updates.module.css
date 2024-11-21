@@ -14,10 +14,6 @@
     width: 500px;
 }
 
-.content .list .item:only-child {
-    flex: 0 1 500px;
-}
-
 .img {
     max-width: 100%;
     height: auto;
@@ -33,9 +29,8 @@
 
 @media (max-width: 768px) {
     .content {
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
-
 
     .content .list .item {
         flex: 1 1 100%;
