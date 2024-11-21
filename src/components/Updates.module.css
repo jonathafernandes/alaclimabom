@@ -9,9 +9,9 @@
 }
 
 .content .list .item {
-    flex: 1 1 calc(50% - 1rem);
     display: flex;
     flex-direction: column;
+    width: 500px;
 }
 
 .content .list .item:only-child {
@@ -25,10 +25,17 @@
     object-fit: cover;
 }
 
+@media (max-width: 1079px) {
+    .list {
+        justify-content: center;
+    }
+}
+
 @media (max-width: 768px) {
     .content {
         padding: 0 2rem;
     }
+
 
     .content .list .item {
         flex: 1 1 100%;
