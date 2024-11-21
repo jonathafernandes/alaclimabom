@@ -1,6 +1,8 @@
 import { client } from "../services/prismic";
 import styles from "./Announcements.module.css";
 import { useState, useEffect } from "react";
+import { format } from "date-fns";
+import { ptBR } from "date-fns/locale";
 
 export function Announcements() {
     const [announcements, setAnnouncements] = useState([]);
@@ -21,7 +23,7 @@ export function Announcements() {
             const announcementsFormatted = announcementsData.map((item) => ({
                 id: item.id,
                 tag: item.data.tag,
-                date: item.data.date,
+                date: format(new Date(item.data.date), "dd/MM/yyyy", { locale: ptBR }),
                 title: item.data.title,
                 description: item.data.description,
             }));
@@ -34,22 +36,26 @@ export function Announcements() {
         <div className={styles.content}>
             <h3>Atividades</h3>
             <ul className={styles.list}>
-                {announcements.map((item) => (
-                    <li key={item.id}>
-                        <span className={styles.tag}>
-                            {item.tag.map((tagPiece, index) => (
-                                <span key={index}>{tagPiece.text}</span>
+                {announcements.length === 0 ? (
+                    <p>Nenhuma atividade recente</p>
+                ) : (
+                    announcements.map((item) => (
+                        <li key={item.id}>
+                            <span className={styles.tag}>
+                                {item.tag.map((tagPiece, index) => (
+                                    <span key={index}>{tagPiece.text}</span>
+                                ))}
+                            </span>
+                            <strong>{item.date}</strong>
+                            {item.title.map((titlePiece, index) => (
+                                <h4 key={index}>{titlePiece.text}</h4>
                             ))}
-                        </span>
-                        <strong>{item.date}</strong>
-                        {item.title.map((titlePiece, index) => (
-                            <h4 key={index}>{titlePiece.text}</h4>
-                        ))}
-                        {item.description.map((descPiece, index) => (
-                            <p key={index}>{descPiece.text}</p>
-                        ))}
-                    </li>
-                ))}
+                            {item.description.map((descPiece, index) => (
+                                <p key={index}>{descPiece.text}</p>
+                            ))}
+                        </li>
+                    ))
+                )}
             </ul>
         </div>
     )
