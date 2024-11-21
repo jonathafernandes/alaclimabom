@@ -1,51 +1,53 @@
+import { useEffect, useState } from "react";
 import styles from "./Updates.module.css";
 import PropTypes from 'prop-types';
+import { client } from "../services/prismic";
 
 export function Updates() {
-    const updates = [
-        {
-            id: 1,
-            title: "Exemplo de notícia 1",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec ante nec quam ultricies luctus. Nulla facilisi. Donec id nunc nec or",
-            src: "https://via.placeholder.com/450x250"
-        },
-        {
-            id: 2,
-            title: "Exemplo de notícia 2",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec ante nec quam ultricies luctus. Nulla facilisi. Donec id nunc nec or",
-            src: "https://via.placeholder.com/450x250"
-        },
-        {
-            id: 3,
-            title: "Exemplo de notícia 3",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec ante nec quam ultricies luctus. Nulla facilisi. Donec id nunc nec or",
-            src: "https://via.placeholder.com/450x250"
-        },
-        {
-            id: 4,
-            title: "Exemplo de notícia 4",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec ante nec quam ultricies luctus. Nulla facilisi. Donec id nunc nec or",
-            src: "https://via.placeholder.com/450x250"
+    const [updates, setUpdates] = useState([]);
+
+    async function fecthUpdates() {
+        try {
+            const response = await client.getAllByType('updates');
+            console.log("🚀 ~ fecthUpdates ~ response:", response)
+            return response;
         }
-    ];
+        catch (error) {
+            console.error('Erro ao buscar notícias', error);
+            return [];
+        }
+    }
+
+    useEffect(() => {
+        async function loadUpdates() {
+            const updatesData = await fecthUpdates();
+            const updatesFormatted = updatesData.map((item) => ({
+                id: item.id,
+                title: item.data.title,
+                image: item.data.image,
+                description: item.data.description,
+            }));
+            setUpdates(updatesFormatted);
+        }
+        loadUpdates();
+    }, []);
 
     return (
         <div className={styles.content}>
-            {
-                updates.length === 0 ? <h4>Sem notícias recentes...</h4> :
-                    <>
-                        <h3>Notícias</h3>
-                        <div className={styles.list}>
-                            {updates.map((updates) => (
-                                <div key={updates.id} className={styles.item}>
-                                    <h4>{updates.title}</h4>
-                                    <img className={styles.img} src={updates.src} alt="" />
-                                    <p>{updates.description}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </>
-            }
+            <h3>Notícias</h3>
+            {<ul className={styles.list}>
+                {updates.map((updates) => (
+                    <li key={updates.id} className={styles.item}>
+                        {updates.title.map((titlePiece, index) => (
+                            <h4 key={index}>{titlePiece.text}</h4>
+                        ))}
+                        <img className={styles.img} src={updates.image.url} alt="" />
+                        {updates.description.map((descPiece, index) => (
+                            <p key={index}>{descPiece.text}</p>
+                        ))}
+                    </li>
+                ))}
+            </ul>}
         </div>
     )
 }

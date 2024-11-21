@@ -1,53 +1,54 @@
+import { client } from "../services/prismic";
 import styles from "./Announcements.module.css";
+import { useState, useEffect } from "react";
 
 export function Announcements() {
-    const announcements = [
-        {
-            id: 1,
-            tag: "Novo",
-            date: "01/01/2021",
-            title: "Notícia 1",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec ante nec quam ultricies luctus. Nulla facilisi. Donec id nunc nec or"
-        },
-        {
-            id: 2,
-            tag: "Novo",
-            date: "01/01/2021",
-            title: "Notícia 2",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec ante nec quam ultricies luctus. Nulla facilisi. Donec id nunc nec or"
-        },
-        {
-            id: 3,
-            tag: "Novo",
-            date: "01/01/2021",
-            title: "Notícia 3",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec ante nec quam ultricies luctus. Nulla facilisi. Donec id nunc nec or"
+    const [announcements, setAnnouncements] = useState([]);
+
+    async function fetchAnnouncements() {
+        try {
+            const response = await client.getAllByType('announcement');
+            return response;
+        } catch (error) {
+            console.error('Erro ao buscar anúncios', error);
+            return [];
         }
-    ]
+    }
+
+    useEffect(() => {
+        async function loadAnnouncements() {
+            const announcementsData = await fetchAnnouncements();
+            const announcementsFormatted = announcementsData.map((item) => ({
+                id: item.id,
+                tag: item.data.tag,
+                date: item.data.date,
+                title: item.data.title,
+                description: item.data.description,
+            }));
+            setAnnouncements(announcementsFormatted);
+        }
+        loadAnnouncements();
+    }, []);
 
     return (
         <div className={styles.content}>
             <h3>Atividades</h3>
             <ul className={styles.list}>
                 {announcements.map((item) => (
-                    <>
-                        <div key={item.id}>
-                            <li>
-                                <span className={styles.tag}>
-                                    {item.tag}
-                                </span>
-                                <br />
-                                <strong>{item.date}</strong>
-                                <br />
-                                {item.title}
-                                {item.content && item.content.__html ? (
-                                    <p dangerouslySetInnerHTML={{ __html: item.content.__html }} />
-                                ) : (
-                                    <p>{item.content}</p>
-                                )}
-                            </li>
-                        </div>
-                    </>
+                    <li key={item.id}>
+                        <span className={styles.tag}>
+                            {item.tag.map((tagPiece, index) => (
+                                <span key={index}>{tagPiece.text}</span>
+                            ))}
+                        </span>
+                        <strong>{item.date}</strong>
+                        {item.title.map((titlePiece, index) => (
+                            <h4 key={index}>{titlePiece.text}</h4>
+                        ))}
+                        {item.description.map((descPiece, index) => (
+                            <p key={index}>{descPiece.text}</p>
+                        ))}
+                    </li>
                 ))}
             </ul>
         </div>

@@ -2,18 +2,36 @@
     margin: 2rem 0 .5rem 0;
 }
 
-.list li {
-    padding: .625rem;
-    margin-bottom: 1rem;
-
-    box-shadow: 0 2px 5px 0 rgba(74, 74, 74, 0.2);
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.list li p {
-    margin-top: 0.5rem;
+.list li {
+    padding: 0.625rem;
+    flex: 1 1 calc(33.333% - 1rem);
+    box-shadow: 0 2px 5px 0 rgba(74, 74, 74, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    border-radius: 5px;
+}
+
+.list .tag {
+    padding: 0.25rem 0.5rem;
+    background-color: #f5f5f5;
+    color: var(--primary);
+    border-radius: 5px;
+    font-size: 0.75rem;
 }
 
 @media (max-width: 772px) {
+    .list li {
+        flex: 1 1 100%;
+    }
+
     .content {
         margin: 0 2rem;
     }

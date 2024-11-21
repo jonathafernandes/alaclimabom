@@ -4,9 +4,13 @@ import { RouterProvider } from 'react-router-dom'
 
 import './index.css'
 import router from './router.jsx'
+import { PrismicProvider } from '@prismicio/react'
+import { client } from './services/prismic.js'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <PrismicProvider client={client}>
+      <RouterProvider router={router} />
+    </PrismicProvider>
   </React.StrictMode>
 )
