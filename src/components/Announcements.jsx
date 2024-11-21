@@ -1,7 +1,7 @@
 import { client } from "../services/prismic";
 import styles from "./Announcements.module.css";
 import { useState, useEffect } from "react";
-import { format } from "date-fns";
+import { format, parseISO } from "date-fns";
 import { ptBR } from "date-fns/locale";
 
 export function Announcements() {
@@ -23,7 +23,7 @@ export function Announcements() {
             const announcementsFormatted = announcementsData.map((item) => ({
                 id: item.id,
                 tag: item.data.tag,
-                date: format(new Date(item.data.date), "dd/MM/yyyy", { locale: ptBR }),
+                date: format(parseISO(item.data.date), "dd/MM/yyyy", { locale: ptBR }),
                 title: item.data.title,
                 description: item.data.description,
             }));
